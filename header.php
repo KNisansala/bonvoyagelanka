@@ -59,7 +59,7 @@
             <nav id="menu-center">
               <ul>
                 <li>
-                    <a class="actived" href="index.php">Home</a>
+                    <a class="" href="index.php">Home</a>
                 </li>
                 <li>
                     <a href="about.php">About Us</a>
