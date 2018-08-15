@@ -1355,6 +1355,7 @@ select.cust-select::-ms-expand {
     border: 1px solid #ddd;
     border-top: 0px; 
     padding: 20px;
+    text-align: justify;
 }
 .gal-home-content p{
     color: #8c8c8c;
