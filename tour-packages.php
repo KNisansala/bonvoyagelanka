@@ -153,30 +153,6 @@
                                     <div class="gal-home">
                                         <a href="projects-detail.html">
                                             <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Blue Ocean Island</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
-                                                        <span class="readmore-span">
-                                                            <a href="view-tour-packages.php" class="btn-content">Read More</a>
-                                                        </span>
-                                                        <span class="book-span">
-                                                            <a href="booking.php" class="btn-content">Book Now</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
                                                 <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
                                             </div>
                                             <div class="gal-home-content">
