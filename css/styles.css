@@ -5,9 +5,37 @@
 .readmore-span {
     margin-left: 35px;
 }
+.readmore-span1 {
+    margin-left: 115px;
+}
 .book-span {
     margin-left: 35px;
 }
 .para-tours{
     margin-bottom: 30px;
+}
+
+.btn-content1 {
+    position: relative;
+    padding: 8px 20px;
+    font-size: 10pt;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 2px solid #fc9f1c;
+    outline: none;
+    text-shadow: none;
+    margin-top: 17px;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn-content1:hover {
+    color: #fff;
+    background: #fc9f1c;
+    border: 3px solid rgba(255, 255, 255, 0);
 }
