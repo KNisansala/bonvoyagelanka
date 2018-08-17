@@ -1888,7 +1888,7 @@ ul#services-list {
 .w-gallery-image {
     width: 100%;
     display: block;
-    height: auto;
+    height: 300px;
 }
 /* Our Works end */
 

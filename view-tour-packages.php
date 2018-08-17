@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-    <!-- Mirrored from themeonstep.com/tf/plesire/service-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 05:09:53 GMT -->
     <head>
         <meta charset="utf-8">
         <title>Plesire | Interactive Travel Template</title>
@@ -283,5 +282,4 @@
         <script src="js/plugin-set.js"></script>
     </body>
 
-    <!-- Mirrored from themeonstep.com/tf/plesire/service-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 05:10:01 GMT -->
 </html>

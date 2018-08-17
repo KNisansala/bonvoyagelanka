@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-    <!-- Mirrored from themeonstep.com/tf/plesire/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 05:04:05 GMT -->
     <head>
         <meta charset="utf-8">
         <title>Bonvoyagelanka</title>
@@ -661,6 +660,4 @@
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
     </body>
-
-    <!-- Mirrored from themeonstep.com/tf/plesire/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 05:04:29 GMT -->
 </html>
