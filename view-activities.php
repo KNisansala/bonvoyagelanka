@@ -58,7 +58,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                               Attractions
+                               Activities
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -106,33 +106,50 @@
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget">
-                                <ul id="services-list">
-                                    <li>
-                                        <a href="#">Luxury Asia Travel</a>
-                                    </li>
-
-                                    <li class="active">
-                                        <a href="#">Blue Ocean Island</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Wild Tour</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">The Kingdom of West</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">An Asian Temple</a>
-                                    </li>
-                                </ul>
+                                <div class="gal-home">
+                                        <a href="view-activities.php">
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight">Luxury Asia Travel</h4>
+                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                        <span class="readmore-span1">
+                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                <div class="gal-home">
+                                        <a href="view-activities.php">
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight">Wild Tour Africa</h4>
+                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                        <span class="readmore-span1">
+                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -244,7 +261,7 @@
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
         <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-      
+
     </body>
 
     <!-- Mirrored from themeonstep.com/tf/plesire/service-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 05:10:01 GMT -->

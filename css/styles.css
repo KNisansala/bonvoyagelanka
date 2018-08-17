@@ -39,3 +39,6 @@
     background: #fc9f1c;
     border: 3px solid rgba(255, 255, 255, 0);
 }
+.hovereffect img {
+    margin-bottom: 0px;
+}
