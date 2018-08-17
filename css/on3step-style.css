@@ -784,7 +784,7 @@ li>a:only-child:after {
   color: #fefefe;
   padding: 310px 0 80px 0;
   background: #222;
-  background: url(../img/bg-commerce.jpg)top fixed;
+  background: url(../img/bg-subheader.jpg)top fixed;
 }
 #subheader h1, #subheader-commerce h1 {
     text-align: left;
