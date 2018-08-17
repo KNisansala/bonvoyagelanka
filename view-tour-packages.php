@@ -74,7 +74,10 @@
                         <div class="col-md-9">
                             <div class="row">
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
+                                    <div class="owl-carousel" id="projectsBig">
                                     <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
+                                    <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
+                                    </div>
                                     <h2 class="big-heading">
                                         Blue Ocean <span class="color">Island</span>
                                     </h2>
@@ -129,19 +132,43 @@
                             </div>
 
                             <div class="widget">
-                                <div class="download-brochure">
-                                    <h3 class="big-heading onStep" data-animation="fadeInUp" data-time="0">
-                                        Get A quote
-                                    </h3>
-
-                                    <p class="onStep" data-animation="fadeInUp" data-time="150">
-                                        With Experts Advice
-                                    </p>
-
-                                    <div class="btn-download onStep" data-animation="fadeInUp" data-time="300">
-                                        <span class="shine"></span><a class="link-class" href="#">DOWNLOAD NOW</a>
+                                <div class="gal-home">
+                                        <a href="view-activities.php">
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight">Luxury Asia Travel</h4>
+                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                        <span class="readmore-span1">
+                                                            <a href="view-tour-packages.php" class="btn-content1">Read More</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </div>
+                                
+                                <div class="gal-home">
+                                        <a href="view-activities.php">
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight">Wild Tour Africa</h4>
+                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                        <span class="readmore-span1">
+                                                            <a href="view-tour-packages.php" class="btn-content1">Read More</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                             </div>
                         </div>
                     </div>
