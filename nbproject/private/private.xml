@@ -5,10 +5,12 @@
         <group>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/index.php</file>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/tour-packages.php</file>
+            <file>file:/C:/xampp/htdocs/bonvoyagelanka/view-attractions.php</file>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/css/styles.css</file>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/header.php</file>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/about.php</file>
             <file>file:/C:/xampp/htdocs/bonvoyagelanka/css/on3step-style.css</file>
+            <file>file:/C:/xampp/htdocs/bonvoyagelanka/attractions.php</file>
         </group>
     </open-files>
 </project-private>
