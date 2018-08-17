@@ -133,7 +133,7 @@
 
                             <div class="widget">
                                 <div class="gal-home">
-                                        <a href="view-activities.php">
+                                    <a href="view-tour-packages.php">
                                             <div class="hovereffect">
                                                 <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
                                             </div>
@@ -152,7 +152,7 @@
                                     </div>
                                 
                                 <div class="gal-home">
-                                        <a href="view-activities.php">
+                                    <a href="view-tour-packages.php">
                                             <div class="hovereffect">
                                                 <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
                                             </div>
