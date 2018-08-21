@@ -49,8 +49,8 @@
           
           <!-- logo --> 
           <a class="navbar-brand white" href="./">
-          <img class="white" alt="logo" src="img/logo.png">
-          <img class="black" alt="logo" src="img/logo-white.png">
+              <img class="white" alt="logo" src="img/logo2.png">
+              <img class="black" alt="logo" src="img/logo2.png">
           </a> 
           <!-- logo end -->
           
