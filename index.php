@@ -65,101 +65,189 @@
             <section class="frm-clean ">
                 <div class="container-fluid">
                     <div class="row">
-
-                        <form id="sform" class="form-inline clean">
-                            <div class="col-md-2 search-icn">
-                                <label for="key"><span class="ti-world color"></span> Keyword</label>
-                                <input type="text" class="form-control" required="" id="key">
-                            </div>
-                            <div class="col-md-2">
-                                <label><span class="ti-menu-alt color"></span> Select your trip</label>
-                                <select class="cust-select" name="select-trip" required="">
-                                    <option value="">Any</option>
-                                    <option value="#">City Travel</option>
-                                    <option value="#">Cultural Travel</option>
-                                    <option value="#">Family Travel</option>
-                                    <option value="#">Holiday Travel</option>
-                                    <option value="#">Luxury Travel</option>
-                                    <option value="#">Wild &amp; Adventure Travel</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label><span class="ti-map-alt color"></span> Destination</label>
-                                <select class="cust-select" name="destination" required="">
-                                    <option value="">Any</option>
-                                    <option value="#">Asia</option>
-                                    <option value="#">Africa</option>
-                                    <option value="#">America</option>
-                                    <option value="#">Australia</option>
-                                    <option value="#">Europe</option>
-                                    <option value="#">Rusia</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label><span class="ti-time color"></span> Duration</label>
-                                <select class="cust-select" name="duraion" required="">
-                                    <option value="">Any</option>
-                                    <option value="#">1 Day Travel</option>
-                                    <option value="#">2 Days Travel</option>
-                                    <option value="#">3 Days Travel</option>
-                                    <option value="#">4 Days Travel</option>
-                                    <option value="#">5 Days Travel</option>
-                                    <option value="#">1 week Travel</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label><span class="ti-calendar color"></span> Date</label>
-                                <div id="filterDate2">
-                                    <!-- Datepicker as text field -->         
-                                    <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" required="">
-                                        <div class="input-group-addon" >
-                                            <span class="fa fa-calendar"></span>
-                                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="feature-1">
+                                <div class="cont-img">
+                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-4.jpg">
+                                </div>
+                                <div class="cont-detail">
+                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
+                                    <div class="star-content color">
                                     </div>
-                                </div>  
+                                    <a href="#" class="btn-content">
+                                        Read More
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-2">
-                                <input class="btn-frm-search" value="FIND NOW" type="submit">
-                            </div>  
-                        </form> 
+                        </div>
 
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="feature-1">
+                                <div class="cont-img">
+                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-5.jpg">
+                                </div>
+                                <div class="cont-detail">
+                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
+                                    <div class="star-content color">
+                                    </div>
+                                    <a href="#" class="btn-content">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                            <div class="feature-1">
+                                <div class="cont-img">
+                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-6.jpg">
+                                </div>
+                                <div class="cont-detail">
+                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
+                                    <div class="star-content color">
+                                    </div>
+                                    <a href="#" class="btn-content">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </section>
             <!-- section search end -->
 
             <!--  top rated --> 
-            <section aria-label="top-rated">
+            <section aria-label="top-rated" class="parallax ">
                 <div class="container-fluid m-5-hor">
-                    <div class="row">
-                        <div class="col-md-6 sp-padding ">
-                            <img alt="top-rated" class="img-responsive" src="img/img-top-rated.jpg">
-                        </div>
-                        <div class="col-md-6 p-30">
-                            <h3 class="big-heading">Welcome</h3>
-<!--                            <span class="sub-heading-content">No mei consectetuer</span>-->
-                            <span class="devider-left"></span>
-                            <p class="para-welcome">
-                                Qui ut ceteros comprehensam. Cu eos sale  sanctus eligendi, id ius elitr saperet,ocurreret  pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer
-                                Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer
-                                Qui ut ceteros comprehensam. Cu eos sale  sanctus eligendi, id ius elitr saperet,ocurreret  pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer
-                                Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. 
-                            </p>
+                    <!-- section about -->
+                    <section id="about-us-1" class="whitepage no-padding">
+                        <div class="container-fluid">
+                            <div class="row">
 
-                            <a href="about.php" class="btn-content">
-                                READ MORE
-                            </a>
+                                <div class="image-container autoheight-1 col-lg-6 hidden-md hidden-sm hidden-xs pull-left onStep" data-animation="fadeInLeft" data-time="0"></div>
+
+                                <div class="col-lg-6 autoheight-1">
+                                    <div class="p-90">
+                                        <h2 class="big-heading space-title">
+                                            A Perfect Place Vacation
+                                            <span class="devider-cont"></span>
+                                        </h2>          
+
+                                        <p class="intro">              
+                                            Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
+                                    </div>   
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <!-- section about end -->
+
+                    <!-- section about -->
+                    <section id="about-us-2" class="no-padding whitepage">
+                        <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="image-container autoheight-2 col-lg-6 hidden-md hidden-sm hidden-xs pull-right onStep" data-animation="fadeInRight" data-time="0"></div>
+
+                                <div class="col-lg-6 autoheight-2">
+                                    <div class="p-90">
+                                        <h2 class="big-heading space-title">
+                                            About Our Service
+                                            <span class="devider-cont"></span>
+                                        </h2>
+
+                                        <p class="intro">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section about end -->
                 </div>
             </section>  
             <!--  top rated end --> 
 
-            <!-- section features -->
-            <section class="whitepage no-bottom no-top no-padding">
+            <!-- testimony --> 
+            <section id="testimony" class="no-padding">
                 <div class="container-fluid">
                     <div class="row">
+
+                        <div class="col-lg-12 col-md-12 autoheight">
+
+                            <div class="p-90">
+                                <h2 class="big-heading topic-dark">Testimonials</h2>
+                                <div id="owl-testimonial" class="owl-carousel owl-theme">
+
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
+                                        </blockquote>
+                                        <div class="img-back">
+                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
+                                        </div>
+                                        <h3>Emma Watson</h3>
+                                    </div>
+
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
+                                        </blockquote>
+                                        <div class="img-back">
+                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
+                                        </div>
+                                        <h3>Emma Watson</h3>
+                                    </div>  
+
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
+                                        </blockquote>
+                                        <div class="img-back">
+                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
+                                        </div>
+                                        <h3>Emma Watson</h3>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- testimony end -->
+
+            <!-- section features -->
+            <section class="no-bottom" style="background-color: #000;">
+                <div class="col-md-9">
+                    <h2 class="big-heading topic-light1">Things To Do In Sri Lanka</h2>
+                </div>
+                <div class="col-md-3">
+                    <a href="view-tour-packages.php" class="btn-content btn-readmore">
+                        View All
+                    </a>
+                </div>
+                <div class="container-fluid">
+
+                    <div class="row row1">
+
                         <div class="no-gutter">
 
                             <div class="col-md-4">
@@ -205,160 +293,6 @@
             </section>
             <!-- section features end -->
 
-            <!-- section list -->
-            <section class="whitepage">
-                <div class="container-fluid m-5-hor">
-                    <div class="row">
-
-                        <div class="col-lg-12">
-                            <h3 class="big-heading">Attractions</h3>
-<!--                            <span class="sub-heading-content">An optional subtitle</span>-->
-                            <span class="devider-left"></span>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/img-fea-1.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">ASIA</span> <sup class="subtour">7 Tours</sup></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/img-fea-2.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">AFRICA</span> <sup class="subtour">22 Tours</sup></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/img-fea-3.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">AUSTRALIA</span> <sup class="subtour">20 Tours</sup></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/img-fea-4.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">EROUPE</span> <sup class="subtour">12 Tours</sup></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star" aria-hidden="true"></i> 
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>  
-
-                    </div>
-                </div>
-            </section>
-            <!-- section list end -->
-
-
-            <!-- testimony --> 
-            <section id="testimony" class="color-page no-padding">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="image-container autoheight col-lg-6 pull-right hidden-md hidden-sm hidden-xs onStep" data-animation="fadeInRight" data-time="300"></div> 
-
-                        <div class="col-lg-6 col-md-12 autoheight">
-
-                            <div class="p-90">
-                                <div id="owl-testimonial" class="owl-carousel owl-theme">
-
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
-                                        <h3>Emma Watson</h3>
-                                    </div>
-
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
-                                        <h3>Emma Watson</h3>
-                                    </div>  
-
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
-                                        <h3>Emma Watson</h3>
-                                    </div>                        
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </section>
-            <!-- testimony end -->
-
             <!--  gallery home --> 
             <section aria-label="gallery">
                 <div class="container-fluid m-5-hor">
@@ -366,7 +300,8 @@
 
                     </div>
                 </div>
-
+                <h2 class="big-heading topic-dark topic">Attractions</h2>
+                <div class="attraction-slider">
                 <div class="onStep" data-animation="fadeInUp" data-time="0">
                     <div id="owl-gal" class="owl-carousel">
 
@@ -374,12 +309,12 @@
                             <div class="gal-home">
                                 <a href="projects-detail.html">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>Blue Ocean Island</h4>
+                                                <h4>Luxury Asia Travel</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -552,6 +487,7 @@
 
                     </div>
                 </div>
+                </div>
             </section> 
             <!--  gallery home end --> 
 
@@ -659,5 +595,29 @@
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#act-carousel").owlCarousel({
+                    loop: true,
+                    margin: 7,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

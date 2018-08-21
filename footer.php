@@ -11,7 +11,7 @@
 
                 <div class="col-md-4">
                     <span class="logo">
-                        <img alt="logo" src="img/logo-white.png">
+                        <img alt="logo" src="img/logo2.png">
                     </span>
                 </div>
 
