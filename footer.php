@@ -5,19 +5,19 @@
 
             <div class="onStep" data-animation="fadeInUp" data-time="300">
                 <div class="col-md-4 text-left">
-                    <span><a href="#">Email: companyname@gmail.com</a></span>
-                    <span>Copyright - 2018 Plesire Travel All Right Reserved</span>
+                    <span><a href="#">Email: mail@sublime.lk</a></span>
+                    <span>Copyright - 2018 <a href="https://www.sublime.lk/">Sublime Holdings</a> All Right Reserved</span>
                 </div>
 
                 <div class="col-md-4">
                     <span class="logo">
-                        <img alt="logo" src="img/logo2.png">
+                        <img alt="logo" src="img/logo3.png">
                     </span>
                 </div>
 
                 <div class="col-md-4 text-right">
-                    <span>129 Park street, New York City, NY 10903</span>
-                    <span>Phone: (+6221) 999 999 999</span>
+                    <span>No. 205, Bokundara, Piliyandala.</span>
+                    <span>Phone: +94 11 3 663500</span>
                 </div>
             </div>
 
