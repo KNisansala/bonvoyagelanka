@@ -8,7 +8,7 @@
          <div class="col-md-6">
           <div class="left">
             <div class="social-icons-subnav hidden-sm hidden-xs">
-                <div>Call Us : +02151 7778 009</div>
+                <div>Call Us : +94 11 3 663500</div>
             </div>
           </div>
          </div>
@@ -49,8 +49,8 @@
           
           <!-- logo --> 
           <a class="navbar-brand white" href="./">
-              <img class="white" alt="logo" src="img/logo2.png">
-              <img class="black" alt="logo" src="img/logo2.png">
+              <img class="white" alt="logo" src="img/logo3.png">
+              <img class="black" alt="logo" src="img/logo3.png">
           </a> 
           <!-- logo end -->
           
@@ -59,28 +59,28 @@
             <nav id="menu-center">
               <ul>
                 <li>
-                    <a class="" href="index.php">Home</a>
+                    <a class="" href="#">Home</a>
                 </li>
                 <li>
-                    <a href="about.php">About Us</a>
+                    <a href="#">About Us</a>
                 </li>
                 <li>
-                    <a href="tour-packages.php">Tour Packages</a>
+                    <a href="#">Tour Packages</a>
                 </li>
                 <li>
-                    <a href="gallery.php">Gallery</a>
+                    <a href="#">Gallery</a>
                 </li>
                 <li>
-                    <a  href="attractions.php">Attractions</a>
+                    <a  href="#">Attractions</a>
                 </li>
                 <li>
-                    <a  href="activities.php">Activities</a>
+                    <a  href="#">Activities</a>
                 </li>
                 <li>
-                    <a href="services.php">Services</a>
+                    <a href="#">Services</a>
                 </li>
                 <li>
-                    <a  href="contacts.php">Contact</a>
+                    <a  href="#">Contact</a>
                 </li>
               </ul>
             </nav>

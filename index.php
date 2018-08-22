@@ -68,16 +68,18 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-4.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-1.jpg">
                                 </div>
                                 <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <h3 class="big-heading"><span class="color">Plan Your Tour</span></h3>
                                     <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
                                     <div class="star-content color">
                                     </div>
+                                    <div class="btn-center">
                                     <a href="#" class="btn-content">
                                         Read More
                                     </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,16 +87,18 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-5.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-2.jpg">
                                 </div>
                                 <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <h3 class="big-heading"><span class="color">Tour Packages</span></h3>
                                     <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
                                     <div class="star-content color">
                                     </div>
+                                    <div class="btn-center">
                                     <a href="#" class="btn-content">
                                         Read More
                                     </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>  
@@ -102,16 +106,18 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/bg-serv-6.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-3.jpg">
                                 </div>
                                 <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">AFRICA</span></h3>
+                                    <h3 class="big-heading"><span class="color">Destinations</span></h3>
                                     <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
                                     <div class="star-content color">
                                     </div>
+                                    <div class="btn-center">
                                     <a href="#" class="btn-content">
                                         Read More
                                     </a>
+                                    </div>
                                 </div>
                             </div>
                         </div> 
@@ -133,13 +139,12 @@
                                 <div class="col-lg-6 autoheight-1">
                                     <div class="p-90">
                                         <h2 class="big-heading space-title">
-                                            A Perfect Place Vacation
+                                            <span class="first">Perfect</span> Place For Vacation
                                             <span class="devider-cont"></span>
                                         </h2>          
 
                                         <p class="intro">              
-                                            Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
+                                            Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et sociis natoque penatibus et magnis dis parturient montes. </p> 
                                     </div>   
                                     <div class="clearfix"></div>
                                 </div>
@@ -159,14 +164,12 @@
                                 <div class="col-lg-6 autoheight-2">
                                     <div class="p-90">
                                         <h2 class="big-heading space-title">
-                                            About Our Service
+                                            <span class="first">About</span> Our Service
                                             <span class="devider-cont"></span>
                                         </h2>
 
-                                        <p class="intro">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
+                                        <p class="intro">
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Cum sociis dis montes.</p>
 
                                     </div>
                                     <div class="clearfix"></div>
@@ -188,7 +191,7 @@
                         <div class="col-lg-12 col-md-12 autoheight">
 
                             <div class="p-90">
-                                <h2 class="big-heading topic-dark">Testimonials</h2>
+                                <h2 class="big-heading topic-dark"><span class="first">Customer</span> Testimonials</h2>
                                 <div id="owl-testimonial" class="owl-carousel owl-theme">
 
                                     <div class="item">
@@ -237,10 +240,10 @@
             <!-- section features -->
             <section class="no-bottom" style="background-color: #000;">
                 <div class="col-md-9">
-                    <h2 class="big-heading topic-light1">Things To Do In Sri Lanka</h2>
+                    <h3 class="big-heading-light1"><span class="first">Things</span> To Do In Sri Lanka</h3>
                 </div>
                 <div class="col-md-3">
-                    <a href="view-tour-packages.php" class="btn-content btn-readmore">
+                    <a href="#" class="btn-content btn-readmore">
                         View All
                     </a>
                 </div>
@@ -253,7 +256,7 @@
                             <div class="col-md-4">
                                 <div class="features no-margin">
                                     <div class="bg-img">
-                                        <h3 class="big-heading">ASIA <sup class="subtour">7 Tours</sup></h3>
+                                        <h3 class="big-heading">Diving<sup class="subtour"></sup></h3>
                                         <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
                                             sanctus eligendi, id ius elitr saperet,ocurreret 
                                             pertinacia pri an. No mei nibh consectetuer</p>
@@ -265,7 +268,7 @@
                             <div class="col-md-4">
                                 <div class="features no-margin">
                                     <div class="bg-img-1">
-                                        <h3 class="big-heading">EUROPE <sup class="subtour">9 Tours</sup></h3>
+                                        <h3 class="big-heading">Rafting<sup class="subtour"></sup></h3>
                                         <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
                                             sanctus eligendi, id ius elitr saperet,ocurreret 
                                             pertinacia pri an. No mei nibh consectetuer</p>
@@ -277,7 +280,7 @@
                             <div class="col-md-4">
                                 <div class="features no-margin">
                                     <div class="bg-img-2">
-                                        <h3 class="big-heading">AFRICA <sup class="subtour">12 Tours</sup></h3>
+                                        <h3 class="big-heading">Surfing<sup class="subtour"></sup></h3>
                                         <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
                                             sanctus eligendi, id ius elitr saperet,ocurreret 
                                             pertinacia pri an. No mei nibh consectetuer</p>
@@ -300,21 +303,21 @@
 
                     </div>
                 </div>
-                <h2 class="big-heading topic-dark topic">Attractions</h2>
+                <h2 class="big-heading topic-dark topic"><span class="first">Destinations</span> In Sri Lanka</h2>
                 <div class="attraction-slider">
                 <div class="onStep" data-animation="fadeInUp" data-time="0">
                     <div id="owl-gal" class="owl-carousel">
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-1.jpg" />
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>Luxury Asia Travel</h4>
+                                                <h4>Dambulla</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -337,14 +340,14 @@
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-2.jpg">
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>Luxury Asia Travel</h4>
+                                                <h4>Hikkaduwa</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -367,14 +370,14 @@
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-3.jpg">
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>Wild Tour Africa</h4>
+                                                <h4>Kandy</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -397,14 +400,14 @@
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img4.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-4.jpg">
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>Amazing Diversity Place</h4>
+                                                <h4>Ambalangoda</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -427,14 +430,14 @@
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img5.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-5.jpg">
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>The Kingdom of West</h4>
+                                                <h4>Adams Peak</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -457,14 +460,14 @@
 
                         <div class="item">
                             <div class="gal-home">
-                                <a href="projects-detail.html">
+                                <a href="#">
                                     <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img6.jpg">
+                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-6.jpg">
                                     </div>
                                     <div class="gal-home-content">
                                         <div class="row">
                                             <div class="col-md-9"> 
-                                                <h4>An Asian Temple</h4>
+                                                <h4>Galle Fort</h4>
                                                 <p>Duration 5 days</p>
                                                 <div class="star-content">
                                                     <i class="fa fa-star" aria-hidden="true"></i> 
@@ -596,28 +599,6 @@
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
         <script>
-            $(document).ready(function () {
-                $("#act-carousel").owlCarousel({
-                    loop: true,
-                    margin: 7,
-                    nav: true,
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    autoplayHoverPause: true,
-                    dots: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
-                });
-            });
-        </script>
+
     </body>
 </html>
