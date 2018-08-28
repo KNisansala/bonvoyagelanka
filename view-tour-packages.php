@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>TourPackages | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -29,6 +29,7 @@
         <link href="css/on3step-style.css" rel="stylesheet">
         <link href="css/queries-on3step.css" media="all" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="fancybox-master/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -57,7 +58,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                               Tour Packages
+                                Tour Packages
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -73,34 +74,181 @@
                         <div class="col-md-9">
                             <div class="row">
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
-                                    <div class="owl-carousel" id="projectsBig">
-                                    <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
-                                    <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
-                                    </div>
                                     <h2 class="big-heading">
-                                        Blue Ocean <span class="color">Island</span>
+                                        Day <span class="color">01</span>
                                     </h2>
-
-                                    <p>
-                                        <em>An international firm of architects, planners and interior designers specialising in a wide range of commercial, residential and public sector projects.</em>
-                                    </p>
-
+                                    <hr/>
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
                                     </p>
                                 </div>
 
                                 <div class="col-md-12">
-                                    <blockquote>
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                                    </blockquote>
+                                    <p>
+                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                    </p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
+                                    <h2 class="big-heading">
+                                        Day <span class="color">02</span>
+                                    </h2>
+                                    <hr/>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                                    </p>
                                 </div>
 
                                 <div class="col-md-12">
                                     <p>
                                         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                                     </p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
+                                    <h2 class="big-heading">
+                                        Day <span class="color">03</span>
+                                    </h2>
+                                    <hr/>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                                    </p>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <p>
+                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                    </p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 image">
+                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
+                                                <div class="middle">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,10 +257,29 @@
                             <div class="widget">
                                 <ul id="services-list">
                                     <li>
+                                        <h5 class="topic-package">Other Tour Packages</h5>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#">Blue Ocean Island</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Wild Tour</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">The Kingdom of West</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">An Asian Temple</a>
+                                    </li>
+                                    <li>
                                         <a href="#">Luxury Asia Travel</a>
                                     </li>
 
-                                    <li class="active">
+                                    <li class="">
                                         <a href="#">Blue Ocean Island</a>
                                     </li>
 
@@ -130,45 +297,6 @@
                                 </ul>
                             </div>
 
-                            <div class="widget">
-                                <div class="gal-home">
-                                    <a href="view-tour-packages.php">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-tour-packages.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                
-                                <div class="gal-home">
-                                    <a href="view-tour-packages.php">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-tour-packages.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -280,6 +408,7 @@
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script src="fancybox-master/js/jquery.fancybox.min.js" type="text/javascript"></script>
     </body>
 
 </html>
