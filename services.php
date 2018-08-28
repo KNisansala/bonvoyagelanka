@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>Services | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -72,46 +72,72 @@
                     <div class="row">
                         <hr>
                         <div class="col-md-3">
-                            <img alt="commerce" src="img/commerce/img1.jpg">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
                         </div>
 
                         <div class="col-md-9">
-                            <p>
+                            <h4>
+                                <i class="fa fa-plane"><span class="icon-style"><strong>Airport Transfers</strong></span></i>
+                            </h4>
+                            <p class="para-service">
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                             </p>
                         </div>
-
                     </div>
+                    
                     <div class="row">
                         <hr>
                         <div class="col-md-3">
-                            <img alt="commerce" src="img/commerce/img1.jpg">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
                         </div>
-
+                        
                         <div class="col-md-9">
-                            <p>
+                            <h4>
+                            <i class="fa fa-car"><span class="icon-style"><strong>Rent a Car</strong></span></i>
+                            </h4>
+                            <p class="para-service">
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                             </p>
                         </div>
-
                     </div>
+                    
                     <div class="row">
                         <hr>
                         <div class="col-md-3">
-                            <img alt="commerce" src="img/commerce/img1.jpg">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
                         </div>
 
                         <div class="col-md-9">
-                            <p>
+                            <h4>
+                            <i class="fa fa-suitcase"><span class="icon-style"><strong>Arrange Tours</strong></span></i>
+                            </h4>
+                            <p class="para-service">
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                             </p>
                         </div>
-
                     </div>
-                    <hr>
+                    
+                    <div class="row">
+                        <hr>
+                        <div class="col-md-3">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>
+                            <i class="fa fa-taxi"><span class="icon-style"><strong>Taxi Service</strong></span></i>
+                            </h4>
+                            <p class="para-service">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr/>
                 </div>
             </section>
 
