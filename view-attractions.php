@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>Attractions | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -70,7 +70,7 @@
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <div class="row">
 
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
@@ -81,7 +81,6 @@
                                     <h2 class="big-heading">
                                         Blue Ocean <span class="color">Island</span>
                                     </h2>
-
                                     <p>
                                         <em>An international firm of architects, planners and interior designers specialising in a wide range of commercial, residential and public sector projects.</em>
                                     </p>
@@ -89,16 +88,6 @@
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
                                     </p>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <blockquote>
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                                    </blockquote>
-                                </div>
-
-                                <div class="col-md-12">
                                     <p>
                                         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
                                     </p>
@@ -106,7 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
+<!--                        <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget">
                                 <div class="gal-home">
                                     <a href="view-attractions.php">
@@ -117,7 +106,7 @@
                                             <div class="row">
                                                 <div class="col-md-12"> 
                                                     <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
                                                     <span class="readmore-span1">
                                                         <a href="view-attractions.php" class="btn-content1">Read More</a>
                                                     </span>
@@ -135,7 +124,7 @@
                                             <div class="row">
                                                 <div class="col-md-12"> 
                                                     <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer.Qui ut ceteros comprehensam.</p>
+                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
                                                     <span class="readmore-span1">
                                                         <a href="view-attractions.php" class="btn-content1">Read More</a>
                                                     </span>
@@ -146,7 +135,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </section>
