@@ -59,28 +59,28 @@
             <nav id="menu-center">
               <ul>
                 <li>
-                    <a class="" href="#">Home</a>
+                    <a class="" href="index.php">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="about.php">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Tour Packages</a>
+                    <a href="tour-packages.php">Tour Packages</a>
                 </li>
                 <li>
-                    <a href="#">Gallery</a>
+                    <a href="gallery.php">Gallery</a>
                 </li>
                 <li>
-                    <a  href="#">Attractions</a>
+                    <a  href="attractions.php">Attractions</a>
                 </li>
                 <li>
-                    <a  href="#">Activities</a>
+                    <a  href="activities.php">Activities</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="services.php">Services</a>
                 </li>
                 <li>
-                    <a  href="#">Contact</a>
+                    <a  href="contacts.php">Contact</a>
                 </li>
               </ul>
             </nav>
