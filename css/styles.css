@@ -267,6 +267,18 @@ hr {
 .icon-style{
     margin-left: 10px;
 }
+#sc_googlemap_1 .map-scrren{
+    border: 0px none;
+    width: 1905px;
+    height: 600px;
+}
+#sc_googlemap_1{
+	height: 601px;
+}
+.red {
+  color: #9F340A;
+}
+
 @media (max-width:500px) {
     #testimony .item {
         margin-left: 0px;
