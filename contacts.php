@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>Contacts | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -29,6 +29,7 @@
         <link href="css/on3step-style.css" rel="stylesheet">
         <link href="css/queries-on3step.css" media="all" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="contact-us-form/style.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -109,8 +110,25 @@
                                     <div class="success" id="mail_success">Thank you. Your message has been sent</div>
                                     <div class="error" id="mail_failed">Error, email not sent</div>
                                 </div>
-                                
+                                <div class="form-group">
+                                <div class="col-md-4 input-margin">
+                                    <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
+                                    <input type="text" name="captchacode" required="" id="captchacode" class="form-control" placeholder="Security code >> ">
+                                    <span id="capspan" ></span>
+                                </div>
+                                <div class="col-md-4 cap-margin input-margin"> 
+                                    <label></label>
+                                    <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                                </div>
+                                <div class="col-md-4 input-margin">
+                                    <div class="div-check" >
+                                        <img src="contact-us-form/img/checking.gif" id="checking"/>
+                                    </div> 
+                                </div>
+                            </div>
+                                <div class="col-md-12">
                                 <button type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
+                                </div>
                             </form>
                         </div>
 
@@ -119,10 +137,10 @@
                             <h3 class="heading-cont">Contact Information</h3>
                             <address class="cont-1">
                                 <span>
-                                    129 Park street, New York 10903</span> 
-                                <span><strong>PHONE:</strong> (+6221) 000 888 999</span> 
-                                <span><strong>EMAIL:</strong><a href="mailto:companyname@gmail.com"> youremail@gmail.com</a></span> 
-                                <span><strong>WEB:</strong><a href="#"> www.yourdomain.com</a></span>
+                                    No. 205, Bokundara, Piliyandala.</span> 
+                                <span><strong>PHONE:</strong> +94 11 3 663500</span> 
+                                <span><strong>EMAIL:</strong><a href="mailto:companyname@gmail.com"> mail@sublime.lk</a></span> 
+                                <span><strong>WEB:</strong><a href="#"> www.bonvoyagelanka.com</a></span>
                             </address>
                         </div>
                         <!-- address end -->
@@ -134,10 +152,12 @@
             <!-- section contact end -->
 
             <!-- map -->
-            <section aria-label="map" class="no-bottom">
+            <section aria-label="map" class="">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
-                        <div class="onStep" data-animation="fadeIn" data-time="300" id="map-1"></div>
+                        <div id="map-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.803855932434!2d79.8211858627196!3d6.921922576462158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1535453693635" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                     </div>
                 </div> 
             </section> 
@@ -250,6 +270,7 @@
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script src="contact-us-form/scripts.js" type="text/javascript"></script>
     </body>
 
 </html>
