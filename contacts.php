@@ -101,7 +101,7 @@
                                 <div class="row form-group form-group-bottom">
                                     <div class="col-md-12">
                                         <label>Subject<span class="red">*</span></label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Country">
+                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Subject">
                                         <span id="spanSubject"></span>
                                     </div>
                                 </div>
