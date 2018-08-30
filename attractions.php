@@ -1,3 +1,10 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$ATTRACTION = new Attraction(Null);
+$attractions = $ATTRACTION->all();
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -74,176 +81,35 @@
                         <!-- right content -->
                         <div class="col-md-12"> 
                             <div class="row">
+                                
+                                <?php
+                                foreach($attractions as $attraction){
+                                ?>
 
                                 <div class="col-md-6 col-lg-3">
                                     <div class="gal-home">
-                                        <a href="projects-detail.html">
+                                        <a href="#"></a>
                                             <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
+                                                <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
                                             </div>
                                             <div class="gal-home-content">
                                                 <div class="row">
                                                     <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
+                                                        <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 120) . '...'; ?></p>
                                                         <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
+                                                            <a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
                                     </div>
                                 </div>
                                 
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                               <?php
+                                }
+                                ?>
                                 
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img4.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Blue Ocean Island</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img5.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">The Kingdom of West</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Blue Ocean Island</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="projects-detail.html">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div>
                         <!-- right content end -->
