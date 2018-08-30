@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>About Us | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
-        <link href="img/favicon.gif" rel="icon" sizes="32x32" type="image/png">
+        <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- font themify CSS -->
@@ -28,6 +28,7 @@
         <link href="css/owl.theme.css" rel="stylesheet">
         <link href="css/on3step-style.css" rel="stylesheet">
         <link href="css/queries-on3step.css" media="all" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -58,7 +59,7 @@
                             <h1 class="big-heading">
                                 About Us
                             </h1>
-                            <p>Varius blandit sit amet</p>
+                            <p>Perfect Place for Vacation</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
             <!-- subheader end -->
 
             <!-- section about -->
-            <section id="about-us-1" class="whitepage no-padding">
+            <section aria-label="se" id="about-us-1" class="whitepage no-padding">
                 <div class="container-fluid">
                     <div class="row">
 

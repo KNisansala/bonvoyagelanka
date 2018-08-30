@@ -9,7 +9,7 @@
         <meta content="" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
-        <link href="img/favicon.gif" rel="icon" sizes="32x32" type="image/png">
+        <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- font themify CSS -->
@@ -68,7 +68,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-1.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-4.jpg">
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color">Plan Your Tour</span></h3>
@@ -87,7 +87,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-2.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-6.jpg">
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color">Tour Packages</span></h3>
@@ -106,7 +106,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-3.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-7.jpg">
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color">Destinations</span></h3>

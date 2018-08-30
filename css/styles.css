@@ -278,6 +278,13 @@ hr {
 .red {
   color: #9F340A;
 }
+#subheader {
+    color: #fefefe;
+    padding: 310px 0 80px 0;
+    background: #222;
+    background: url(../img/banner.jpg)top fixed;
+    background-size:cover;
+}
 
 @media (max-width:500px) {
     #testimony .item {
