@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Plesire | Interactive Travel Template</title>
+        <title>Gallery | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
-        <link href="img/favicon.gif" rel="icon" sizes="32x32" type="image/png">
+        <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- font themify CSS -->
@@ -76,7 +76,7 @@
                         <div class="v-align">
                             <div class="col-md-11 col-xs-12">
                                 <!-- filter project -->
-                                <ul id="filter-hide" class="init">
+<!--                                <ul id="filter-hide" class="init">
                                     <li class="filtter-icon"><i class="ti-layout-grid3-alt"></i>
                                     </li>
                                 </ul>
@@ -96,7 +96,7 @@
 
                                     <li class="filt-projects-w" data-project=".afr">Africa
                                     </li>
-                                </ul>
+                                </ul>-->
 
                                 <!-- filter project end -->
                                 <div class="col-md-12"> 

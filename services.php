@@ -9,7 +9,7 @@
         <meta content="" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
-        <link href="img/favicon.gif" rel="icon" sizes="32x32" type="image/png">
+        <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- font themify CSS -->
@@ -52,7 +52,7 @@
             <!-- /Header -->
 
             <!-- subheader -->
-            <section id="subheader-commerce">
+            <section id="subheader">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
                         <div class="col-md-12">
