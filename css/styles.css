@@ -273,10 +273,10 @@ hr {
     height: 600px;
 }
 #sc_googlemap_1{
-	height: 601px;
+    height: 601px;
 }
 .red {
-  color: #9F340A;
+    color: #9F340A;
 }
 #subheader {
     color: #fefefe;
@@ -328,5 +328,17 @@ hr {
     }
     .p-right{
         margin-right: 30px;
+    }
+    .white nav a {
+        padding: 4px;
+    }
+    #subheader {
+        padding: 150px 0 80px 0;
+    }
+    #projectsBig .owl-prev {
+        top: 32%;
+    }
+    #projectsBig .owl-next {
+        top: 32%;
     }
 }
