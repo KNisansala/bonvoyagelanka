@@ -1,9 +1,23 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$ATTRACTION = new Attraction($id);
+
+$attractions = $ATTRACTION->all();
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
     <head>
         <meta charset="utf-8">
-        <title>Attractions | Bonvoyagelanka</title>
+        <title><?php echo $ATTRACTION->title; ?> | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -57,7 +71,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Attractions
+                                <?php echo $ATTRACTION->title; ?>
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -70,72 +84,63 @@
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                             <div class="row">
-
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
                                     <div class="owl-carousel" id="projectsBig">
-                                        <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
-                                        <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
+
+                                        <?php
+                                        $photos = AttractionPhoto::getAttractionPhotosById($ATTRACTION->id);
+                                        foreach ($photos as $photo) {
+                                            ?>
+                                        <img alt="" class="img-responsive" src="upload/attraction/gallery/thumb/<?php echo $photo['image_name']; ?>">
+                                            <?php
+                                        }
+                                        ?>
+
                                     </div>
                                     <h2 class="big-heading">
-                                        Blue Ocean <span class="color">Island</span>
+                                        <?php echo $ATTRACTION->title; ?>
                                     </h2>
                                     <p>
-                                        <em>An international firm of architects, planners and interior designers specialising in a wide range of commercial, residential and public sector projects.</em>
-                                    </p>
-
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-                                    </p>
-                                    <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                        <?php echo $ATTRACTION->description; ?>  
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-<!--                        <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
+                        <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget">
+                                
+                                <?php
+                                foreach ($attractions as $key => $attraction) {
+                                    if ($key < 2) {
+                                        ?>
                                 <div class="gal-home">
-                                    <a href="view-attractions.php">
+                                    <a href="#"></a>
                                         <div class="hovereffect">
-                                            <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
+                                            <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
                                         </div>
                                         <div class="gal-home-content">
                                             <div class="row">
                                                 <div class="col-md-12"> 
-                                                    <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
+                                                    <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 120) . '...'; ?></p>
                                                     <span class="readmore-span1">
-                                                        <a href="view-attractions.php" class="btn-content1">Read More</a>
+                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
                                 </div>
-                                <div class="gal-home">
-                                    <a href="view-attractions.php">
-                                        <div class="hovereffect">
-                                            <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
-                                        </div>
-                                        <div class="gal-home-content">
-                                            <div class="row">
-                                                <div class="col-md-12"> 
-                                                    <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                    <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                    <span class="readmore-span1">
-                                                        <a href="view-attractions.php" class="btn-content1">Read More</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                <?php
+                                    }
+                                }
+                                ?>
+                                
                             </div>
 
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </section>
