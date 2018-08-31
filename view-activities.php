@@ -1,9 +1,23 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$ACTIVITY = new Activities($id);
+
+$activities = $ACTIVITY->all();
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
     <head>
         <meta charset="utf-8">
-        <title>Activities | Bonvoyagelanka</title>
+        <title><?php echo $ACTIVITY->title; ?>  | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -57,7 +71,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                               Activities
+                                <?php echo $ACTIVITY->title; ?>
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -72,74 +86,60 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="row">
-                                
+
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
                                     <div class="owl-carousel" id="projectsBig">
-                                    <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
-                                    <img alt="imgservices" class="img-responsive" src="img/serv.jpg">
+
+                                        <?php
+                                        $photos = ActivitiesPhoto::getActivitiesPhotosById($ACTIVITY->id);
+                                        foreach ($photos as $photo) {
+                                            ?>
+                                            <img alt="imgservices" class="img-responsive" src="upload/activity/gallery/thumb/<?php echo $photo['image_name']; ?>">
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
                                     <h2 class="big-heading">
-                                        Blue Ocean <span class="color">Island</span>
+                                        <?php echo $ACTIVITY->title; ?>
                                     </h2>
 
                                     <p>
-                                        <em>An international firm of architects, planners and interior designers specialising in a wide range of commercial, residential and public sector projects.</em>
-                                    </p>
-
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-                                    </p>
-                                    
-                                    <p>
-                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                                    </p>
-                                    <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                        <?php echo $ACTIVITY->description; ?>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget">
-                                <div class="gal-home">
-                                        <a href="view-activities.php">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img2.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Luxury Asia Travel</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. </p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
                                 
+                                <?php
+                                foreach ($activities as $key => $activity) {
+                                    if ($key < 2) {
+                                        ?>
                                 <div class="gal-home">
-                                        <a href="view-activities.php">
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
-                                                        </span>
-                                                    </div>
+                                    <a href="#"></a>
+                                        <div class="hovereffect">
+                                            <img alt="imageportofolio" class="img-responsive" src="upload/activity/<?php echo $activity['image_name'] ?>">
+                                        </div>
+                                        <div class="gal-home-content">
+                                            <div class="row">
+                                                <div class="col-md-12"> 
+                                                    <h4 class="autoheight"><?php echo $activity['title']; ?></h4>
+                                                    <p class="para-tours"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
+                                                    <span class="readmore-span1">
+                                                        <a href="view-activities.php?id=<?php echo $activity["id"];?>" class="btn-content1">Read More</a>
+                                                    </span>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                </div>
+                                
+                                <?php
+                                    }
+                                }
+                                ?>
+                                
                             </div>
 
                         </div>
