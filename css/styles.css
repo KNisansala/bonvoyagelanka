@@ -299,7 +299,9 @@ hr {
 .map-padding{
     padding: 90px 0 35px 0;
 }
-
+#content-commerce h3{
+    font-size: 19px;
+}
 
 @media (max-width:500px) {
     #testimony .item {

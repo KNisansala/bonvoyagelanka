@@ -68,87 +68,76 @@
 
 
             <section id="content-commerce">
-                <div class="container-fluid m-5-hor">
-                    <div class="container-fluid">
+                <div class="container-fluid m-5-hor onStep" data-animation="fadeInUp" data-time="300">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image1.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Airport Transfers</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <hr>
+                        <div class="col-md-3">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image2.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Rent a Car</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image3.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Arrange Tours</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image4.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Taxi Service</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-servises.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-9">
+                            <h4>
+                                <i class="fa fa-plane"><span class="icon-style"><strong>Airport Transfers</strong></span></i>
+                            </h4>
+                            <p class="para-service">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                            </p>
                         </div>
                     </div>
+                    
+                    <div class="row">
+                        <hr>
+                        <div class="col-md-3">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
+                        </div>
                         
-                </div>
+                        <div class="col-md-9">
+                            <h4>
+                            <i class="fa fa-car"><span class="icon-style"><strong>Rent a Car</strong></span></i>
+                            </h4>
+                            <p class="para-service">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <hr>
+                        <div class="col-md-3">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>
+                            <i class="fa fa-suitcase"><span class="icon-style"><strong>Arrange Tours</strong></span></i>
+                            </h4>
+                            <p class="para-service">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <hr>
+                        <div class="col-md-3">
+                            <img class="img-service" alt="commerce" src="img/commerce/img1.jpg">
+                        </div>
+
+                        <div class="col-md-9">
+                            <h4>
+                            <i class="fa fa-taxi"><span class="icon-style"><strong>Taxi Service</strong></span></i>
+                            </h4>
+                            <p class="para-service">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr/>
                 </div>
             </section>
 
