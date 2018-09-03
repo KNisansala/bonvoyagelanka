@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Contacts | Bonvoyagelanka</title>
+        <title>Booking | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -29,7 +29,7 @@
         <link href="css/on3step-style.css" rel="stylesheet">
         <link href="css/queries-on3step.css" media="all" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-        <link href="contact-us-form/style.css" rel="stylesheet" type="text/css"/>
+        <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -58,116 +58,113 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Contact Us
+                                Booking
                             </h1>
-                            <p>Varius blandit sit amet</p>
+                            <p>Perfect Place for Vacation</p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- subheader end -->
 
-            <!-- section contact -->
-            <section aria-label="contact" class="whitepage map-padding">
+            <section aria-label="contact" class="whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
 
-                        <div class="col-md-8">
-                            <form id="form-contact1">
-                                <div class="row form-group form-group-bottom">
+                        <div class="col-md-12">
+                            <div id="form-contact1">
+                                <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>Name<span class="red">*</span></label>
-                                        <input type="text" class="form-control" required="" id="name-contact-1" placeholder="Your Name">
-                                        <span id="spanFullName"></span>
+                                        <label>Your Name<span class="red">*</span></label>
+                                        <input type="text" name="txtName" id="txtName" class="form-control input-validater" value="" placeholder="Your Name">
+                                        <span id="spanName"></span>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Email<span class="red">*</span></label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Email">
+                                        <label>Your Email<span class="red">*</span></label>
+                                        <input type="text" name="txtEmail" id="txtEmail" class="form-control input-validater" value="" placeholder="Your Email">
                                         <span id="spanEmail"></span>
                                     </div>
                                 </div>
-                                <div class="row form-group form-group-bottom">
+                                <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>Contact No</label>
-                                        <input type="text" class="form-control" required="" id="name-contact-1" placeholder="Your Contact No">
-                                        <span id="spanFullName"></span>
+                                        <label>Arrival Date<span class="red">*</span></label>
+                                        <input type="text" name="txtArrival" class="form-control input-validater" id="datepicker" value="" placeholder="Arrival Date">
+                                        <span id="spanArrival"></span>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Country</label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Country">
-                                        <span id="spanEmail"></span>
+                                        <label>Departure Date<span class="red">*</span></label>
+                                        <input type="text" name="txtDeparture" class="form-control input-validater" id="datepicker1" value="" placeholder="Departure Date">
+                                        <span id="spanDeparture"></span>
                                     </div>
                                 </div>
-                                <div class="row form-group form-group-bottom">
+
+                                <div class="row form-group">
                                     <div class="col-md-12">
-                                        <label>Subject<span class="red">*</span></label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Subject">
-                                        <span id="spanSubject"></span>
+                                        <label>Tour Package<span class="red">*</span></label>
+                                        <select name="tour_package" id="tour_package" class="form-control input-validater">
+                                            <option value="1">Select Tour Package</option>
+                                            <option value="2">Select Tour Package</option>
+                                            <option value="3">Select Tour Package</option>
+                                            <option value="4">Select Tour Package</option>
+                                        </select>
+                                        <span id="spanPackage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label>Number of Adults<span class="red">*</span></label>
+                                        <input type="text" name="txtAdults" class="form-control input-validater" id="txtAdults" value="" placeholder="Number of Adults">
+                                        <span id="spanAdults"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Number of Children<span class="red">*</span></label>
+                                        <input type="text" name="txtChildren" id="txtChildren" class="form-control input-validater" value="" placeholder="Number of Children">
+                                        <span id="spanChildren"></span>
                                     </div>
                                 </div>
                                 <div class="form-group user-message">
-                                    <textarea class="form-control" required="" id="message-contact" placeholder="Your Message"></textarea>
-                                    <div class="success" id="mail_success">Thank you. Your message has been sent</div>
-                                    <div class="error" id="mail_failed">Error, email not sent</div>
+                                    <label>Message</label>
+                                    <textarea name="txtMessage" id="txtMessage" class="form-control input-validater" placeholder="Your Message"></textarea>
                                 </div>
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
+                                        <input type="text" name="captchacode" id="captchacode" class="form-control" placeholder="Security code >> ">
+                                        <span id="capspan" ></span>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                        <label></label>
+                                        <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
-                                <div class="col-md-4 input-margin">
-                                    <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
-                                    <input type="text" name="captchacode" required="" id="captchacode" class="form-control" placeholder="Security code >> ">
-                                    <span id="capspan" ></span>
+                                    <div class="col-md-12">
+                                        <button type="submit" id="btnSubmit" class="btn-contact">Send Now</button>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 cap-margin input-margin"> 
-                                    <label></label>
-                                    <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
-                                </div>
+
                                 <div class="col-md-4 input-margin">
                                     <div class="div-check" >
-                                        <img src="contact-us-form/img/checking.gif" id="checking"/>
+                                        <img src="booking-form/img/checking.gif" id="checking"/>
                                     </div> 
                                 </div>
+
+                                <div id="dismessage"></div>
                             </div>
-                                <div class="col-md-12">
-                                <button type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
-                                </div>
-                            </form>
                         </div>
-
-                        <!-- address -->
-                        <div class="col-md-3 col-md-offset-1">
-                            <h3 class="heading-cont">Contact Information</h3>
-                            <address class="cont-1">
-                                <span>
-                                    No. 205, Bokundara, Piliyandala.</span> 
-                                <span><strong>PHONE:</strong> +94 11 3 663500</span> 
-                                <span><strong>EMAIL:</strong><a href="mailto:companyname@gmail.com"> mail@sublime.lk</a></span> 
-                                <span><strong>WEB:</strong><a href="#"> www.bonvoyagelanka.com</a></span>
-                            </address>
-                        </div>
-                        <!-- address end -->
-
 
                     </div>
                 </div>
             </section>
-            <!-- section contact end -->
 
-            <!-- map -->
-            <section aria-label="map" class="">
-                <div class="container-fluid m-5-hor">
-                    <div class="row">
-                        <div id="map-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.803855932434!2d79.8211858627196!3d6.921922576462158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1535453693635" width="1270" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    </div>
-                </div> 
-            </section> 
-            <!-- map end -->
-
-            <!-- Footer -->
+            <!-- footer -->
             <?php
             include 'footer.php';
             ?>
-            <!-- /Footer -->
+            <!-- footer end -->
+
 
             <!-- ScrolltoTop -->
             <div id="totop" class="init">
@@ -262,15 +259,23 @@
         <script src='plugin/bootstrap-datepicker.min.js'></script>
         <script src="plugin/sticky.js"></script> 
         <!-- slider revolution  -->
-        <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script  src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-        <!--  map google  -->
-        <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCQ5KODzqooIP496GPLRaMAsZ4eN8Vro_U"></script> 
-<!--        <script src="js/map-1.js" type="text/javascript"></script>-->
+        <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
-        <script src="contact-us-form/scripts.js" type="text/javascript"></script>
-    </body>
+        <script src="booking-form/scripts.js" type="text/javascript"></script>
 
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>
+        <script>
+            $(function () {
+                $("#datepicker1").datepicker();
+            });
+        </script>
+
+    </body>
 </html>

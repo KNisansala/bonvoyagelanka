@@ -2660,7 +2660,7 @@ address.cont-1 span a {
     box-shadow: none;
 }
 .user-message textarea {
-    min-height: 195px;
+    min-height: 150px;
     padding-top: 15px !important;
 }
 #form-contact1 input{
@@ -2691,9 +2691,9 @@ address.cont-1 span a {
 .user-url::after {
     content: "\f0ac";
 }
-.user-message::after {
+/*.user-message::after {
     content: "\f086";
-}
+}*/
 .btn-contact {
     width: auto;
     height: 40px;

@@ -285,6 +285,21 @@ hr {
     background: url(../img/banner.jpg)top fixed;
     background-size:cover;
 }
+.form-control {
+    width: 100% !important;
+    padding: 10px 20px 6px 35px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #969595;
+    background: #fff !important;
+    border: 2px solid #9c9b9b;
+    border-radius: 0;
+    box-shadow: none;
+}
+.map-padding{
+    padding: 90px 0 35px 0;
+}
+
 
 @media (max-width:500px) {
     #testimony .item {
