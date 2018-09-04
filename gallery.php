@@ -1,3 +1,10 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$PHOTO_ALBUM = new PhotoAlbum(Null);
+$photo_albums = $PHOTO_ALBUM->all();      
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -102,16 +109,19 @@
                                 <div class="col-md-12"> 
                                     <div class="row">
 
+                                        <?php
+                                    foreach ($photo_albums as $photo_album) {
+                                        ?>
                                         <div class="col-md-6 col-lg-3">
                                             <div class="gal-home">
                                                 <div class="w-gallery aus afr">
                                                     <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
                                                         <div class="hovereffect-color">
-                                                            <img src="img/projects-w/10.jpg" alt="" class="w-gallery-image">
+                                                            <img src="upload/photo-album/<?php echo $photo_album['image_name'] ?>" alt="" class="w-gallery-image">
                                                             <div class="overlay">
                                                                 <div class="v-align wrap">
                                                                     <span class="icon">
-                                                                        <a class="" href="img/projects-w/10.jpg" data-fancybox="images">
+                                                                        <a class="" href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" data-fancybox="images">
                                                                             <i class="fa fa-search"></i>
                                                                         </a> 
                                                                     </span>
@@ -122,237 +132,9 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/11.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/11.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/12.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/12.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/13.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/13.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/14.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/14.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/15.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/15.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/10.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/10.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/11.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/11.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/10.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/10.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/11.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/11.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/12.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/12.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="gal-home">
-                                                <div class="w-gallery aus afr">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                                        <div class="hovereffect-color">
-                                                            <img src="img/projects-w/13.jpg" alt="" class="w-gallery-image">
-                                                            <div class="overlay">
-                                                                <div class="v-align wrap">
-                                                                    <span class="icon">
-                                                                        <a class="" href="img/projects-w/13.jpg" data-fancybox="images">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </a> 
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                    }
+                                    ?>
                                         
                                     </div>
                                 </div>
