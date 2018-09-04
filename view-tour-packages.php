@@ -1,9 +1,25 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$TOUR_PACKAGE = new TourPackage($id);
+$TOUR_DATE = new TourDate(NULL);
+
+$tour_packages = $TOUR_PACKAGE->all();
+$tour_dates = $TOUR_DATE->getTourDatesById($id);
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
     <head>
         <meta charset="utf-8">
-        <title>TourPackages | Bonvoyagelanka</title>
+        <title><?php echo $TOUR_PACKAGE->title; ?> | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -58,7 +74,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Tour Packages
+                                <?php echo $TOUR_PACKAGE->title; ?>
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -72,185 +88,48 @@
                 <div class="container-fluid m-5-hor">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
-                                    <h2 class="big-heading">
-                                        Day <span class="color">01</span>
-                                    </h2>
-                                    <hr/>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-                                    </p>
-                                </div>
+                            <?php
+                            foreach ($tour_dates as $tour_date) {
+                                ?>
+                                <div class="row">
 
-                                <div class="col-md-12">
-                                    <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
-                                    </p>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
+                                    <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
+                                        <h2 class="big-heading">
+                                            Day <span class="color"><?php echo $tour_date['title']; ?></span>
+                                        </h2>
+                                        <hr/>
+                                        <p>
+                                            <?php echo $tour_date['description']; ?>
+                                        </p>
                                     </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="col-md-12 col-margin">
 
-                            <div class="row">
-                                <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
-                                    <h2 class="big-heading">
-                                        Day <span class="color">02</span>
-                                    </h2>
-                                    <hr/>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-                                    </p>
-                                </div>
+                                        <?php
+                                        $photos = TourDatePhoto::getTourDatePhotosById($tour_date['id']);
+                                        foreach ($photos as $key => $photo) {
+                                            if ($key < 4) {
+                                                ?>
+                                                <div class="col-md-3 image">
+                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                                        <a class="" href="upload/tour-package/date/gallery/<?php echo $photo['image_name']; ?>" data-fancybox="images">
+                                                            <div class="middle">
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+                                                            <img src="upload/tour-package/date/gallery/thumb/<?php echo $photo['image_name']; ?>" alt="" class=""/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
 
-                                <div class="col-md-12">
-                                    <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
-                                    </p>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
                                     </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
-                                    <h2 class="big-heading">
-                                        Day <span class="color">03</span>
-                                    </h2>
-                                    <hr/>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-                                    </p>
                                 </div>
-
-                                <div class="col-md-12">
-                                    <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
-                                    </p>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-11.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-1.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-22.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-2.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-33.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-3.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 image">
-                                        <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                            <a class="" href="img/tour/image-44.jpg" data-fancybox="images">
-                                                <div class="middle">
-                                                    <i class="fa fa-search"></i>
-                                                </div>
-                                                <img src="img/tour/image-4.jpg" alt="" class=""/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <?php
+                            }
+                            ?>
                         </div>
 
                         <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
@@ -259,41 +138,16 @@
                                     <li>
                                         <h5 class="topic-package">Other Tour Packages</h5>
                                     </li>
+                                    <?php
+                                    foreach ($tour_packages as $tour_package) {
+                                        ?>
+                                        <li class="">
+                                            <a href="view-tour-packages.php?id=<?php echo $tour_package["id"]; ?>"><?php echo $tour_package['title']; ?></a>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
 
-                                    <li class="">
-                                        <a href="#">Blue Ocean Island</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Wild Tour</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">The Kingdom of West</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">An Asian Temple</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Luxury Asia Travel</a>
-                                    </li>
-
-                                    <li class="">
-                                        <a href="#">Blue Ocean Island</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Wild Tour</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">The Kingdom of West</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">An Asian Temple</a>
-                                    </li>
                                 </ul>
                             </div>
 
