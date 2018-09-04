@@ -230,13 +230,14 @@ hr {
     display: block;
     clear: both;
     border-top: solid 1px #fc9f1c;
-    margin: 40px 0 40px 0;
+    margin: 20px 0 40px 0;
 }
 .services h2 {
     margin-bottom: 15px;
 }
 .services p{
     margin: 0 0 20px;
+    text-align: justify;
 }
 
 .middle {
@@ -310,6 +311,9 @@ hr {
 }
 .w-gallery-image {
     height: 100%;
+}
+.col-margin{
+    margin-bottom: 20px;
 }
 
 @media (max-width:500px) {
