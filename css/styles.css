@@ -308,6 +308,9 @@ hr {
     text-align: center;
     color: #fc9f1c;
 }
+.w-gallery-image {
+    height: 100%;
+}
 
 @media (max-width:500px) {
     #testimony .item {
