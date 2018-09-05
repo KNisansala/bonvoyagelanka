@@ -1067,7 +1067,7 @@ li>a:only-child:after {
 .features .bg-img {
     width: 100%;
     padding: 60px;
-    background: url(../img/home/activity-1-1.jpg);
+/*    background: url(../img/home/activity-1-1.jpg);*/
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
@@ -1075,7 +1075,7 @@ li>a:only-child:after {
 .features .bg-img-1 {
     width: 100%;
     padding: 60px;
-    background: url(../img/home/activity-2-1.jpg);
+/*    background: url(../img/home/activity-2-1.jpg);*/
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
@@ -1083,7 +1083,7 @@ li>a:only-child:after {
 .features .bg-img-2 {
     width: 100%;
     padding: 60px;
-    background: url(../img/home/activity-3-1.jpg);
+/*    background: url(../img/home/activity-3-1.jpg);*/
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
