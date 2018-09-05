@@ -38,7 +38,6 @@ if (isset($_POST['create'])) {
     $VALID->check($SLIDER, [
         'title' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'url' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 
@@ -101,7 +100,6 @@ if (isset($_POST['update'])) {
     $VALID->check($SLIDER, [
         'title' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'url' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 

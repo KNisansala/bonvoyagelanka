@@ -1,3 +1,15 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$ATTRACTION = new Attraction(Null);
+$attractions = $ATTRACTION->all();
+
+$ACTIVITY = New Activities(Null);
+$activities = $ACTIVITY->all();
+
+$sliders = Slider::all();
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -76,9 +88,9 @@
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
+                                        <a href="#" class="btn-content">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -95,9 +107,9 @@
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
+                                        <a href="#" class="btn-content">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -114,9 +126,9 @@
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
-                                    <a href="#" class="btn-content">
-                                        Read More
-                                    </a>
+                                        <a href="#" class="btn-content">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +255,7 @@
                     <h3 class="big-heading-light1"><span class="first">Things</span> To Do In Sri Lanka</h3>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="btn-content btn-readmore">
+                    <a href="activities.php" class="btn-content btn-readmore">
                         View All
                     </a>
                 </div>
@@ -253,41 +265,25 @@
 
                         <div class="no-gutter">
 
-                            <div class="col-md-4">
-                                <div class="features no-margin">
-                                    <div class="bg-img">
-                                        <h3 class="big-heading">Diving<sup class="subtour"></sup></h3>
-                                        <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
-                                            sanctus eligendi, id ius elitr saperet,ocurreret 
-                                            pertinacia pri an. No mei nibh consectetuer</p>
-                                        <a href="#"><span class="shine"></span>View More</a>
+                            <?php
+                            foreach ($activities as $key => $activity) {
+                                if ($key < 3) {
+                                    ?>
+                                    <div class="col-md-4">
+                                        <div class="features no-margin">
+                                            <div class="bg-img" style="background: url(upload/activity/<?php echo $activity['image_name'] ?>);">
+                                                <div class="">
+                                                <h3 class="big-heading"><?php echo $activity['title']; ?><sup class="subtour"></sup></h3>
+                                                <p class="content"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
+                                                <a href="view-activities.php?id=<?php echo $activity["id"]; ?>"><span class="shine"></span>View More</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="features no-margin">
-                                    <div class="bg-img-1">
-                                        <h3 class="big-heading">Rafting<sup class="subtour"></sup></h3>
-                                        <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
-                                            sanctus eligendi, id ius elitr saperet,ocurreret 
-                                            pertinacia pri an. No mei nibh consectetuer</p>
-                                        <a href="#"><span class="shine"></span>View More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="features no-margin">
-                                    <div class="bg-img-2">
-                                        <h3 class="big-heading">Surfing<sup class="subtour"></sup></h3>
-                                        <p class="content">Qui ut ceteros comprehensam. Cu eos sale 
-                                            sanctus eligendi, id ius elitr saperet,ocurreret 
-                                            pertinacia pri an. No mei nibh consectetuer</p>
-                                        <a href="#"><span class="shine"></span>View More</a>
-                                    </div>
-                                </div>
-                            </div>
+                                    <?php
+                                }
+                            }
+                            ?>
 
                         </div>
 
@@ -305,191 +301,37 @@
                 </div>
                 <h2 class="big-heading topic-dark topic"><span class="first">Destinations</span> In Sri Lanka</h2>
                 <div class="attraction-slider">
-                <div class="onStep" data-animation="fadeInUp" data-time="0">
-                    <div id="owl-gal" class="owl-carousel">
+                    <div class="onStep" data-animation="fadeInUp" data-time="0">
+                        <div id="owl-gal" class="owl-carousel">
 
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-1.jpg" />
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Dambulla</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <?php
+                            foreach ($attractions as $attraction) {
+                                ?>
+                                <div class="item">
+                                    <div class="gal-home">
+                                        <a href="#"></a>
+                                        <div class="hovereffect">
+                                            <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>" />
+                                        </div>
+                                        <div class="gal-home-content">
+                                            <div class="row">
+                                                <div class="col-md-12"> 
+                                                    <h4 class=""><?php echo $attraction['title']; ?></h4>
+                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 90) . '...'; ?></p>
+                                                    <span class="readmore-span1">
+                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a>
+                                                    </span>
                                                 </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                                <?php
+                            }
+                            ?>
+
                         </div>
-
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-2.jpg">
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Hikkaduwa</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-3.jpg">
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Kandy</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-4.jpg">
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Ambalangoda</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-5.jpg">
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Adams Peak</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="gal-home">
-                                <a href="#">
-                                    <div class="hovereffect">
-                                        <img alt="imageportofolio" class="img-responsive" src="img/home/des-6.jpg">
-                                    </div>
-                                    <div class="gal-home-content">
-                                        <div class="row">
-                                            <div class="col-md-9"> 
-                                                <h4>Galle Fort</h4>
-                                                <p>Duration 5 days</p>
-                                                <div class="star-content">
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star" aria-hidden="true"></i> 
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="review-cont big-heading">1 Reviews</div>
-                                            </div>
-                                            <div class="col-md-3"> 
-                                                <div class="heading-price">From</div>
-                                                <div class="price big-heading">$ 1200</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>  
-
                     </div>
-                </div>
                 </div>
             </section> 
             <!--  gallery home end --> 
@@ -600,5 +442,5 @@
         <script src="js/plugin-set.js"></script>
         <script>
 
-    </body>
-</html>
+        </body>
+        </html>
