@@ -2,27 +2,30 @@
 //--------------------------------------------------check one by one on blur--------------------------------------------------
 jQuery(document).ready(function () {
 
-  jQuery("#txtFullName").blur(function () {
-        validateEmpty("txtFullName", "spanFullName");
+    jQuery("#txtName").blur(function () {
+        validateEmpty("txtName", "spanName");
     });
-        
+
     jQuery("#txtEmail").blur(function () {
         ValidateEmail("txtEmail", "spanEmail");
+    });
+
+    jQuery("#txtContact").blur(function () {
+        validateEmpty("txtContact", "spanContact");
     });
 
     jQuery("#txtCountry").blur(function () {
         validateEmpty("txtCountry", "spanCountry");
     });
-
-    jQuery("#txtPhone").blur(function () {
-        validateEmpty("txtPhone", "spanPhone");
+    jQuery("#txtSubject").blur(function () {
+        validateEmpty("txtSubject", "spanSubject");
     });
-    
+
     jQuery("#captchacode").blur(function () {
         validateEmpty("captchacode", "capspan");
     });
 
-    jQuery("#btnSubmit").bind('click', function () {   
+    jQuery("#btnSubmit").bind('click', function () {
         if (!validate()) {
             return;
         }
@@ -49,10 +52,11 @@ jQuery(document).ready(function () {
 
 function validate() {
     if (
-            validateEmpty("txtFullName", "spanFullName") &
+            validateEmpty("txtName", "spanName") &
             ValidateEmail("txtEmail", "spanEmail") &
+            validateEmpty("txtContact", "spanContact") &
             validateEmpty("txtCountry", "spanCountry") &
-            validateEmpty("txtPhone", "spanPhone") &
+            validateEmpty("txtSubject", "spanSubject") &
             validateEmpty("captchacode", "capspan")
 
             )
@@ -76,10 +80,11 @@ function sendForm() {
         dataType: "json",
         type: "POST",
         data: {
-            full_lname: jQuery('#txtFullName').val(),
+            full_lname: jQuery('#txtName').val(),
             email: jQuery('#txtEmail').val(),
+            contact: jQuery('#txtContact').val(),
             country: jQuery('#txtCountry').val(),
-            phone: jQuery('#txtPhone').val(),                                              
+            subject: jQuery('#txtSubject').val(),
             message: jQuery('#txtMessage').val(),
             captchacode: jQuery('#captchacode').val()
 
@@ -99,10 +104,11 @@ function sendForm() {
                 jQuery("#checking").hide();
                 jQuery("#dismessage").html(msg).delay(1000).show(1000);
 
-                jQuery('#txtFullName').val("");
+                jQuery('#txtName').val("");
                 jQuery('#txtEmail').val("");
+                jQuery('#txtContact').val("");
                 jQuery('#txtCountry').val("");
-                jQuery('#txtPhone').val("");
+                jQuery('#txtSubject').val("");
                 jQuery('#txtMessage').val("");
                 jQuery('#captchacode').val("");
 

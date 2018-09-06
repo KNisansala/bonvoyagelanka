@@ -73,47 +73,46 @@
                     <div class="row">
 
                         <div class="col-md-8">
-                            <form id="form-contact1">
+                            <div id="form-contact1">
                                 <div class="row form-group form-group-bottom">
                                     <div class="col-md-6">
-                                        <label>Name<span class="red">*</span></label>
-                                        <input type="text" class="form-control" required="" id="name-contact-1" placeholder="Your Name">
-                                        <span id="spanFullName"></span>
+                                         <label>Your Name<span class="red">*</span></label>
+                                        <input type="text" name="txtName" id="txtName" class="form-control input-validater" value="" placeholder="Your Name">
+                                        <span id="spanName"></span>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Email<span class="red">*</span></label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Email">
+                                        <label>Your Email<span class="red">*</span></label>
+                                        <input type="text" name="txtEmail" id="txtEmail" class="form-control input-validater" value="" placeholder="Your Email">
                                         <span id="spanEmail"></span>
                                     </div>
                                 </div>
                                 <div class="row form-group form-group-bottom">
                                     <div class="col-md-6">
-                                        <label>Contact No</label>
-                                        <input type="text" class="form-control" required="" id="name-contact-1" placeholder="Your Contact No">
-                                        <span id="spanFullName"></span>
+                                        <label>Contact No<span class="red">*</span></label>
+                                        <input type="text" name="txtContact" id="txtContact" class="form-control input-validater" value="" placeholder="Your Contact No">
+                                        <span id="spanContact"></span>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>Country</label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Country">
-                                        <span id="spanEmail"></span>
+                                        <label>Country<span class="red">*</span></label>
+                                        <input type="text" name="txtCountry" id="txtCountry" class="form-control input-validater" value="" placeholder="Your Country">
+                                        <span id="spanCountry"></span>
                                     </div>
                                 </div>
                                 <div class="row form-group form-group-bottom">
                                     <div class="col-md-12">
                                         <label>Subject<span class="red">*</span></label>
-                                        <input type="email" class="form-control" required="" id="email-contact" placeholder="Subject">
+                                        <input type="text" name="txtSubject" id="txtSubject" class="form-control input-validater" value="" placeholder="Subject">
                                         <span id="spanSubject"></span>
                                     </div>
                                 </div>
                                 <div class="form-group user-message">
-                                    <textarea class="form-control" required="" id="message-contact" placeholder="Your Message"></textarea>
-                                    <div class="success" id="mail_success">Thank you. Your message has been sent</div>
-                                    <div class="error" id="mail_failed">Error, email not sent</div>
+                                    <label>Message</label>
+                                    <textarea name="txtMessage" id="txtMessage" class="form-control input-validater" placeholder="Your Message"></textarea>
                                 </div>
                                 <div class="form-group">
                                 <div class="col-md-4 input-margin">
                                     <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
-                                    <input type="text" name="captchacode" required="" id="captchacode" class="form-control" placeholder="Security code >> ">
+                                    <input type="text" name="captchacode" id="captchacode" class="form-control" placeholder="Security code >> ">
                                     <span id="capspan" ></span>
                                 </div>
                                 <div class="col-md-4 cap-margin input-margin"> 
@@ -127,9 +126,12 @@
                                 </div>
                             </div>
                                 <div class="col-md-12">
-                                <button type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
+                                <button type="submit" id="btnSubmit" class="btn-contact">Send Now</button>
                                 </div>
-                            </form>
+                                
+                                <div id="dismessage"></div>
+                                
+                            </div>
                         </div>
 
                         <!-- address -->
