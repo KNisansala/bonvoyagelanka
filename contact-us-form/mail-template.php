@@ -120,16 +120,21 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                          Email : ' . $visitor_email . '
                                                     </font>
                                                 </li>
+                                                <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Contact No : ' . $contact . '
+                                                    </font>
+                                                </li>
                                                  <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Country : ' . $country . '
                                                     </font>
-                                                </li>
-                                                <li>
+                                                </li>                                        
+                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Phone : ' . $phone . '
+                                                         Subject : ' . $subject . '
                                                     </font>
-                                                </li>                                              
+                                                </li>                                        
                                             </ul>
                                         </td>
                                         <td width="2%">&nbsp;</td>
@@ -307,7 +312,11 @@ $company_message = '
                                                          Email : ' . $visitor_email . '
                                                     </font>
                                                 </li>
-                                                
+                                                <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Contact No : ' . $contact . '
+                                                    </font>
+                                                </li>
                                                  <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Country : ' . $country . '
@@ -315,7 +324,7 @@ $company_message = '
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Phone : ' . $phone . '
+                                                         Subject : ' . $subject . '
                                                     </font>
                                                 </li>
                                             </ul>

@@ -2,11 +2,11 @@
 
 //----------------------Company Information---------------------
 
-$comany_name = "Uppermost-Villa";
-$website_name = "www.uppermostvilla.com";
-$comConNumber = "+94 91 792 4959";
-$comEmail = "info@uppermostvilla.com";
-$from = 'info@uppermostvilla.com';
+$comany_name = "Bonvoyagelanka";
+$website_name = "www.bonvoyagelanka.com";
+$comConNumber = "94 76 8261423";
+$comEmail = "amalidinushika93@gmail.com";
+$from = 'amalidinushika93@gmail.com';
 
 
 //----------------------CAPTCHACODE---------------------
@@ -26,13 +26,14 @@ if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
 
 $full_lname = $_POST['full_lname'];
 $visitor_email = $_POST['email'];
+$contact = $_POST['contact'];
 $country = $_POST['country'];
-$phone = $_POST['phone'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 $captchacode = $_POST['captchacode'];
 
 
-$subject = 'New Website Enquiry';
+//$subject = 'New Website Enquiry';
 
 
 date_default_timezone_set('Asia/Colombo');
