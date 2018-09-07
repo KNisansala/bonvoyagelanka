@@ -3,6 +3,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
 $ACTIVITY = new Activities(Null);
 $activities = $ACTIVITY->all();
+
 ?>
 
 <!DOCTYPE html>
@@ -77,17 +78,17 @@ $activities = $ACTIVITY->all();
             <section aria-label="section-blog" id="content">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
-                        
+
                         <!-- right content -->
                         <div class="col-md-12"> 
                             <div class="row">
 
                                 <?php
-                                foreach($activities as $activity){
-                                ?>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="#"></a>
+                                foreach ($activities as $activity) {
+                                    ?>
+                                    <div class="col-md-4 col-lg-3">
+                                        <div class="gal-home gal-home1">
+                                            <a href="#"></a>
                                             <div class="hovereffect">
                                                 <img alt="imageportofolio" class="img-responsive" src="upload/activity/<?php echo $activity['image_name'] ?>">
                                             </div>
@@ -95,40 +96,57 @@ $activities = $ACTIVITY->all();
                                                 <div class="row">
                                                     <div class="col-md-12"> 
                                                         <h4 class="autoheight"><?php echo $activity['title']; ?></h4>
-                                                        <p class="para-tours"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-activities.php?id=<?php echo $activity["id"];?>" class="btn-content1">Read More</a>
+                                                        <p class="para-tours"><?php echo substr($activity['short_description'], 0, 95) . '...'; ?></p>
+                                                        <span class="btn-center">
+                                                            <center><a href="view-activities.php?id=<?php echo $activity["id"]; ?>" class="btn-content1">Read More</a></center>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                    </div>
-                                </div>
-                                <?php
-                                }
-                                ?>
-                                
-<!--                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
-                                        <a href="view-activities.php">
+                                        </div>
+                                        <div class="gal-home gal-home2">
+                                            <a href="#"></a>
                                             <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
+                                                <img alt="imageportofolio" class="img-responsive" src="upload/activity/<?php echo $activity['image_name'] ?>">
                                             </div>
                                             <div class="gal-home-content">
                                                 <div class="row">
                                                     <div class="col-md-12"> 
-                                                        <h4 class="autoheight">Wild Tour Africa</h4>
-                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
+                                                        <h4 class="autoheight"><?php echo $activity['title']; ?></h4>
+                                                        <p class="para-tours"><?php echo substr($activity['short_description'], 0, 95) . '...'; ?></p>
+                                                        <span class="btn-center">
+                                                            <center><a href="view-activities.php?id=<?php echo $activity["id"]; ?>" class="btn-content1">Read More</a></center>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>-->
-                                
+                                    <?php
+                                }
+                                ?>
+
+                                <!--                                <div class="col-md-6 col-lg-3">
+                                                                    <div class="gal-home">
+                                                                        <a href="view-activities.php">
+                                                                            <div class="hovereffect">
+                                                                                <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img3.jpg">
+                                                                            </div>
+                                                                            <div class="gal-home-content">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12"> 
+                                                                                        <h4 class="autoheight">Wild Tour Africa</h4>
+                                                                                        <p class="para-tours">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an.</p>
+                                                                                        <span class="readmore-span1">
+                                                                                            <a href="view-activities.php" class="btn-content1">Read More</a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>-->
+
                             </div>
                         </div>
                         <!-- right content end -->
@@ -243,6 +261,19 @@ $activities = $ACTIVITY->all();
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script>
+            $(window).load(function () {
+                var width = $(window).width();
+
+                if (1365 < width > 1279) {
+                    $('.gal-home2').removeClass('hidden');
+                    $('.gal-home1').addClass('hidden');
+                } else {
+                    $('.gal-home1').removeClass('hidden');
+                    $('.gal-home2').addClass('hidden');
+                }
+            });
+        </script>
     </body>
 
 </html>

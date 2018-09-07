@@ -7,6 +7,9 @@ $attractions = $ATTRACTION->all();
 $ACTIVITY = New Activities(Null);
 $activities = $ACTIVITY->all();
 
+$SERVICE = New Service(Null);
+$services = $SERVICE->all();
+
 $sliders = Slider::all();
 ?>
 
@@ -77,26 +80,35 @@ $sliders = Slider::all();
             <section class="frm-clean ">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-4.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Plan Your Tour</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                        <a href="#" class="btn-content">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <?php
+                        foreach ($services as $key => $service) {
+                            if ($key < 3) {
+                                ?>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="feature-1">
+                                        <div class="cont-img">
+                                            <img alt="img-cont" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
+                                        </div>
+                                        <div class="cont-detail">
+                                            <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
+                                            <p class="max-char"><?php echo substr($service['short_description'], 0, 85) . '...'; ?></p>
+                                            <div class="star-content color">
+                                            </div>
+                                            <div class="btn-center">
+                                                <a href="view-services.php?id=<?php echo $service["id"]; ?>" class="btn-content">
+                                                    Read More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
+
+<!--                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
                                     <img alt="img-cont" class="img-responsive" src="img/home/tour-6.jpg">
@@ -132,7 +144,7 @@ $sliders = Slider::all();
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -273,9 +285,9 @@ $sliders = Slider::all();
                                         <div class="features no-margin">
                                             <div class="bg-img" style="background: url(upload/activity/<?php echo $activity['image_name'] ?>);">
                                                 <div class="">
-                                                <h3 class="big-heading"><?php echo $activity['title']; ?><sup class="subtour"></sup></h3>
-                                                <p class="content"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
-                                                <a href="view-activities.php?id=<?php echo $activity["id"]; ?>"><span class="shine"></span>View More</a>
+                                                    <h3 class="big-heading"><?php echo $activity['title']; ?><sup class="subtour"></sup></h3>
+                                                    <p class="content"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
+                                                    <a href="view-activities.php?id=<?php echo $activity["id"]; ?>"><span class="shine"></span>View More</a>
                                                 </div>
                                             </div>
                                         </div>
