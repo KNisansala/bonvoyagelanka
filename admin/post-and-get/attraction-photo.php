@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
     $ATTRACTION_PHOTO->attraction = $_POST['id'];
-    $ATTRACTION_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $ATTRACTION_PHOTO->caption = $_POST['caption'];
 
 
     $dir_dest = '../../upload/attraction/gallery/';
@@ -130,7 +130,7 @@ if (isset($_POST['update'])) {
     $ATTRACTION_PHOTO = new AttractionPhoto($_POST['id']);
 
     $ATTRACTION_PHOTO->image_name = $_POST['oldImageName'];
-    $ATTRACTION_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $ATTRACTION_PHOTO->caption = $_POST['caption'];
 
     $VALID = new Validator();
     $VALID->check($ATTRACTION_PHOTO, [

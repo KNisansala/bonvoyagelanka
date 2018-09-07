@@ -86,8 +86,8 @@ $attractions = $ATTRACTION->all();
                                 foreach($attractions as $attraction){
                                 ?>
 
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="gal-home">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="gal-home gal-home1">
                                         <a href="#"></a>
                                             <div class="hovereffect">
                                                 <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
@@ -96,9 +96,26 @@ $attractions = $ATTRACTION->all();
                                                 <div class="row">
                                                     <div class="col-md-12"> 
                                                         <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
-                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 120) . '...'; ?></p>
-                                                        <span class="readmore-span1">
-                                                            <a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a>
+                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 122) . '...'; ?></p>
+                                                        <span class="btn-center">
+                                                            <center><a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a></center>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gal-home gal-home2">
+                                        <a href="#"></a>
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 95) . '...'; ?></p>
+                                                        <span class="btn-center">
+                                                            <center><a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a></center>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -224,6 +241,22 @@ $attractions = $ATTRACTION->all();
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script>
+        $(window).load(function() {
+           var width = $(window).width();
+           
+           if(1365 < width > 1279) {
+               $('.gal-home2').removeClass('hidden');
+               $('.gal-home1').addClass('hidden');
+           } else {
+               $('.gal-home1').removeClass('hidden');
+               $('.gal-home2').addClass('hidden');
+           }
+        });
+        </script>
+        
+        
+        
     </body>
 
 </html>

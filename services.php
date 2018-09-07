@@ -1,3 +1,12 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$SERVICE = New Service(Null);
+$services = $SERVICE->all();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -71,81 +80,31 @@
                 <div class="container-fluid m-5-hor">
                     <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image1.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Airport Transfers</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image2.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Rent a Car</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image3.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Arrange Tours</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                    <a href="view-services.php" class="btn-content">
-                                        Read More
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
                         
+                        <?php
+                        foreach ($services as $service) {
+                                ?>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                             <div class="feature-1">
                                 <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/commerce/image4.jpg">
+                                    <img alt="img-cont" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
                                 </div>
                                 <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Taxi Service</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
+                                    <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
+                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 100) . '...'; ?></p>
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
-                                    <a href="view-servises.php" class="btn-content">
+                                    <a href="view-services.php?id=<?php echo $service["id"]; ?>" class="btn-content">
                                         Read More
                                     </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                         
                 </div>

@@ -1,9 +1,23 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$SERVICE = new Service($id);
+
+$services = $SERVICE->all();
+?>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
     <head>
         <meta charset="utf-8">
-        <title>Services | Bonvoyagelanka</title>
+        <title><?php echo $SERVICE->title; ?> | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
         <meta content="" name="keywords">
@@ -57,7 +71,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Services
+                                <?php echo $SERVICE->title; ?>
                             </h1>
                             <p>Varius blandit sit amet</p>
                         </div>
@@ -74,17 +88,20 @@
                             <div class="row">
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
                                     <div class="owl-carousel" id="projectsBig">
-
-                                        <img alt="" class="img-responsive" src="img/commerce/image1.jpg">
-                                        <img alt="" class="img-responsive" src="img/commerce/image2.jpg">
-                                        
+                                        <?php
+                                        $photos = ServicePhoto::getServicePhotosById($SERVICE->id);
+                                        foreach ($photos as $photo) {
+                                            ?>
+                                            <img alt="" class="img-responsive" src="upload/service/gallery/thumb/<?php echo $photo['image_name']; ?>">
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
                                     <h2 class="big-heading">
-                                        Airport Transfers
+                                        <?php echo $SERVICE->title; ?>
                                     </h2>
                                     <p>
-                                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
-                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. 
+                                        <?php echo $SERVICE->description; ?>
                                     </p>
                                 </div>
                             </div>
@@ -93,51 +110,36 @@
                         <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget">
                                 <h3 class="more">More Services</h3>
-                                
+
                                 <?php
-//                                foreach ($attractions as $key => $attraction) {
-//                                    if ($key < 2) {
-//                                        ?>
-                                <div class="gal-home">
-                                    <a href="#"></a>
-                                        <div class="hovereffect">
-                                            <img alt="imageportofolio" class="img-responsive" src="img/commerce/image2.jpg">
-                                        </div>
-                                        <div class="gal-home-content">
-                                            <div class="row">
-                                                <div class="col-md-12"> 
-                                                    <h4 class="autoheight">Rent a Car</h4>
-                                                    <p class="para-tours">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                                    <span class="readmore-span1">
-                                                        <a href="view-services.php" class="btn-content1">Read More</a>
-                                                    </span>
+                                foreach ($services as $key => $service) {
+                                    if ($key < 2) {
+//                                        
+                                        ?>
+                                        <div class="gal-home">
+                                            <a href="#"></a>
+                                            <div class="hovereffect">
+                                                <img alt="imageportofolio" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
+                                            </div>
+                                            <div class="gal-home-content">
+                                                <div class="row">
+                                                    <div class="col-md-12"> 
+                                                        <h4 class="autoheight"><?php echo $service['title'] ?></h4>
+                                                        <p class="para-tours"><?php echo substr($service['short_description'], 0, 100) . '...'; ?></p>
+                                                        <span class="readmore-span1">
+                                                            <a href="view-services.php?id=<?php echo $service["id"]; ?>" class="btn-content1">Read More</a>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                </div>
-                                
-                                <div class="gal-home">
-                                    <a href="#"></a>
-                                        <div class="hovereffect">
-                                            <img alt="imageportofolio" class="img-responsive" src="img/commerce/image3.jpg">
-                                        </div>
-                                        <div class="gal-home-content">
-                                            <div class="row">
-                                                <div class="col-md-12"> 
-                                                    <h4 class="autoheight">Arrange Tours</h4>
-                                                    <p class="para-tours">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                                    <span class="readmore-span1">
-                                                        <a href="view-services.php" class="btn-content1">Read More</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <?php
-//                                    }
-//                                }
-//                                ?>
-                                
+
+                                        <?php
+                                    }
+                                }
+//                                
+                                ?>
+
                             </div>
 
                         </div>

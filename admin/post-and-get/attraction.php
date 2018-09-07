@@ -8,9 +8,9 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
 
-    $ATTRACTION->title = mysql_real_escape_string($_POST['title']);
-    $ATTRACTION->short_description = mysql_real_escape_string($_POST['short_description']);
-    $ATTRACTION->description = mysql_real_escape_string($_POST['description']);
+    $ATTRACTION->title = $_POST['title'];
+    $ATTRACTION->short_description = $_POST['short_description'];
+    $ATTRACTION->description = $_POST['description'];
 
     $dir_dest = '../../upload/attraction/';
 
@@ -93,9 +93,9 @@ if (isset($_POST['update'])) {
 
 
     $ATTRACTION->image_name = $_POST['oldImageName'];
-    $ATTRACTION->title = mysql_real_escape_string($_POST['title']);
-    $ATTRACTION->short_description = mysql_real_escape_string($_POST['short_description']);
-    $ATTRACTION->description = mysql_real_escape_string($_POST['description']);
+    $ATTRACTION->title = $_POST['title'];
+    $ATTRACTION->short_description = $_POST['short_description'];
+    $ATTRACTION->description = $_POST['description'];
 
     $VALID = new Validator();
     $VALID->check($ATTRACTION, [

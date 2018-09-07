@@ -372,3 +372,48 @@ hr {
         top: 32%;
     }
 }
+
+@media (max-width:360px) {
+    .features .bg-img {
+        padding: 48px;
+    }
+}
+
+@media (max-width:1280px) {
+    .book-span {
+        margin-left: 15px;
+    }
+    .readmore-span {
+        margin-left: 0px;
+    }
+    .features .bg-img {
+        padding: 53px;
+    }
+    #about-us-1 h2{
+        font-size: 26px;
+    }
+    #about-us-2 h2{
+        font-size: 26px;
+    }
+    .readmore-span1 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:1366px) {
+    .readmore-span1 {
+        margin-left: 50px;
+    }
+    .book-span {
+        margin-left: 33px;
+    }
+    .readmore-span {
+        margin-left: 0px;
+    }
+    #content-commerce h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width:1286px) and (max-width:1386px) {
+
+}
