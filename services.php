@@ -68,7 +68,7 @@ $services = $SERVICE->all();
                             <h1 class="big-heading">
                                 Services
                             </h1>
-                            <p>Varius blandit sit amet</p>
+<!--                            <p>Varius blandit sit amet</p>-->
                         </div>
                     </div>
                 </div>
@@ -85,13 +85,29 @@ $services = $SERVICE->all();
                         foreach ($services as $service) {
                                 ?>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="feature-1">
+                            <div class="feature-1 gal-home1">
                                 <div class="cont-img">
                                     <img alt="img-cont" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
-                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 100) . '...'; ?></p>
+                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 65) . '...'; ?></p>
+                                    <div class="star-content color">
+                                    </div>
+                                    <div class="btn-center">
+                                    <a href="view-services.php?id=<?php echo $service["id"]; ?>" class="btn-content">
+                                        Read More
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-1 gal-home2">
+                                <div class="cont-img">
+                                    <img alt="img-cont" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
+                                </div>
+                                <div class="cont-detail">
+                                    <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
+                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 120) . '...'; ?></p>
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
@@ -123,85 +139,6 @@ $services = $SERVICE->all();
                 <span class="ti-angle-up"></span>
             </div>  
 
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required="required">         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
-
         </div>
         <!-- content wraper end --> 
 
@@ -216,6 +153,19 @@ $services = $SERVICE->all();
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script>
+            $(window).load(function () {
+                var width = $(window).width();
+
+                if (1365 < width > 1279) {
+                    $('.gal-home2').removeClass('hidden');
+                    $('.gal-home1').addClass('hidden');
+                } else {
+                    $('.gal-home1').removeClass('hidden');
+                    $('.gal-home2').addClass('hidden');
+                }
+            });
+        </script>
     </body>
 
 </html>

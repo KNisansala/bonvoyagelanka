@@ -107,7 +107,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="96%" style="border-top:1px solid #000000" >
                                             
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
-                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Detail</h4>
+                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Details</h4>
                                             </font>
                                             <ul>
                                              <li>
@@ -311,7 +311,7 @@ $company_message = '
                                         <td width="96%" style="border-top:1px solid #000000" >
                                             
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
-                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Detail</h4>
+                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Details</h4>
                                             </font>
                                             <ul>
                                               <li>

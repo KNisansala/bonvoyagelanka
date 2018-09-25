@@ -59,7 +59,6 @@
                             <h1 class="big-heading">
                                 About Us
                             </h1>
-                            <p>Perfect Place for Vacation</p>
                         </div>
                     </div>
                 </div>
@@ -71,18 +70,30 @@
                 <div class="container-fluid">
                     <div class="row">
 
-                        <div class="image-container autoheight-1 col-lg-6 hidden-md hidden-sm hidden-xs pull-left onStep" data-animation="fadeInLeft" data-time="0"></div>
+                        <div class="image-container autoheight-1 col-lg-6 hidden-md hidden-sm hidden-xs pull-left onStep img-about" data-animation="fadeInLeft" data-time="0"></div>
 
                         <div class="col-lg-6 autoheight-1">
                             <div class="p-90">
                                 <h2 class="big-heading space-title">
-                                    A Perfect Place Vacation
+                                    A Perfect Place For Vacation
                                     <span class="devider-cont"></span>
                                 </h2>          
 
                                 <p class="intro">              
-                                    Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
+                                    <i>“Holiday is a dream and we know it”</i>
+                                    <br/>
+                                    We, the team BONVOYAGELANKA travel crew is privileged to show you and to
+                                    take you around the most beautiful island in the world.
+                                    It obvious that Sri Lanka is well known for its amazing diversity of cultures, the
+                                    natural beauty of the landscape and a glorious history dating back over 2500
+                                    years.
+                                    So, let us take you to discover the ancient wonders depicts in historical
+                                    monuments, religious sites as well as fortresses. Let us take you there where
+                                    you can determine between variety of activities from lazing on the beach to
+                                    diving between corals and observing blue whales and dolphins. Prospect the
+                                    antient kingdoms, feed orphan baby elephants and ride on elephants and to
+                                    sip the world finest tea etc.
+                                </p>
                             </div>   
                             <div class="clearfix"></div>
                         </div>
@@ -97,7 +108,7 @@
                 <div class="container-fluid">
                     <div class="row">
 
-                        <div class="image-container autoheight-2 col-lg-6 hidden-md hidden-sm hidden-xs pull-right onStep" data-animation="fadeInRight" data-time="0"></div>
+                        <div class="image-container autoheight-2 col-lg-6 hidden-md hidden-sm hidden-xs pull-right onStep img-about" data-animation="fadeInRight" data-time="0"></div>
 
                         <div class="col-lg-6 autoheight-2">
                             <div class="p-90">
@@ -106,10 +117,23 @@
                                     <span class="devider-cont"></span>
                                 </h2>
 
-                                <p class="intro">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p class="intro">
+                                    Numerous firms and agencies have merged to cater the need of
+                                    transportation, but we definitely would try to make our customer delight by
+                                    offering and outstanding service by being a team who always go extra mile to
+                                    exceed the expectation of our guest.
+                                    In our effort of making something unique, we thought of providing a
+                                    professional chauffeurs who will go over the boundaries. He will be a friendly
+                                    local advisor who will create a hustle free environment and as well as
+                                    understanding the needs and wants of the guest as a sensitive and empathetic
+                                    guardian. So, for sure our guest won’t be a stranger any more under the wings
+                                    of care and protection.
+                                    We will certainly assure that we will take you to your destination safely and
+                                    smoothly. At last but not least, our soul expectation and keen desire is to
+                                    render an optimal service in transportation which make our guest,
+                                    undoubtedly WOW!
+                                </p>
 
-                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis.
 
                             </div>
                             <div class="clearfix"></div>
@@ -132,85 +156,6 @@
             <div id="totop" class="init">
                 <span class="ti-angle-up"></span>
             </div>  
-
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required="required">         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
 
         </div>
         <!-- content wraper end --> 

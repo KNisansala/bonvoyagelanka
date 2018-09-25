@@ -73,7 +73,7 @@ $attractions = $ATTRACTION->all();
                             <h1 class="big-heading">
                                 <?php echo $ATTRACTION->title; ?>
                             </h1>
-                            <p>Varius blandit sit amet</p>
+<!--                            <p>Varius blandit sit amet</p>-->
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ $attractions = $ATTRACTION->all();
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-12 onStep" data-animation="fadeInUp" data-time="300">
                                     <div class="owl-carousel" id="projectsBig">
@@ -93,7 +93,7 @@ $attractions = $ATTRACTION->all();
                                         $photos = AttractionPhoto::getAttractionPhotosById($ATTRACTION->id);
                                         foreach ($photos as $photo) {
                                             ?>
-                                        <img alt="" class="img-responsive" src="upload/attraction/gallery/thumb/<?php echo $photo['image_name']; ?>">
+                                            <img alt="" class="img-responsive" src="upload/attraction/gallery/thumb/<?php echo $photo['image_name']; ?>">
                                             <?php
                                         }
                                         ?>
@@ -109,35 +109,102 @@ $attractions = $ATTRACTION->all();
                             </div>
                         </div>
 
-                        <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
-                            <div class="widget">
-                                
+                        <div class="col-md-4 onStep" data-animation="fadeInUp" data-time="600">
+                            <div class="widget hidden-md hidden-sm hidden-xs">
+
                                 <?php
                                 foreach ($attractions as $key => $attraction) {
-                                    if ($key < 2) {
+                                    if ($key < 10) {
                                         ?>
-                                <div class="gal-home">
-                                    <a href="#"></a>
-                                        <div class="hovereffect">
-                                            <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
-                                        </div>
-                                        <div class="gal-home-content">
-                                            <div class="row">
-                                                <div class="col-md-12"> 
-                                                    <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
-                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 120) . '...'; ?></p>
-                                                    <span class="readmore-span1">
-                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a>
-                                                    </span>
+                                        <!--                                <div class="gal-home">
+                                                                            <a href="#"></a>
+                                                                                <div class="hovereffect">
+                                                                                    <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                                                                </div>
+                                                                                <div class="gal-home-content">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12"> 
+                                                                                            <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                                                            <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 120) . '...'; ?></p>
+                                                                                            <span class="readmore-span1">
+                                                                                                <center><a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a></center>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>-->
+                                        
+                                            <div class="gal-home" style="background: #632b2b33;">
+                                                <div class="col-xs-6 col-sm-5 col-md-5 attraction">
+
+                                                    <div class="hovereffect">
+                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                            <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                                            <div class="middle">
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-7 entry-box">
+                                                    <div class="gal-home">
+                                                        <div class="row">
+                                                            <div class="col-md-12"> 
+                                                                <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                                    <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                                    <p class="gal-para"><?php echo substr($attraction['short_description'], 0, 35) . '...'; ?></p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                </div>
-                                <?php
+                                        
+                                        <?php
                                     }
                                 }
                                 ?>
-                                
+                            </div>
+                            
+                            <div class="widget hidden-lg">
+
+                                <?php
+                                foreach ($attractions as $key => $attraction) {
+                                    if ($key < 3) {
+                                        ?>
+                                        <div class="col-sm-3">
+                                            <div class="gal-home" style="background: #632b2b33;">
+                                                <div class="col-xs-12 col-sm-12 col-md-5 attraction">
+
+                                                    <div class="hovereffect">
+                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                            <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                                            <div class="middle">
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-7 entry-box">
+                                                    <div class="gal-home">
+                                                        <div class="row">
+                                                            <div class="col-md-12"> 
+                                                                <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                                    <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                                    <p class="gal-para"><?php echo substr($attraction['short_description'], 0, 50) . '...'; ?></p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </div>
 
                         </div>
@@ -157,85 +224,6 @@ $attractions = $ATTRACTION->all();
             <div id="totop" class="init">
                 <span class="ti-angle-up"></span>
             </div>  
-
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required>         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
 
         </div>
         <!-- content wraper end --> 

@@ -1,4 +1,4 @@
-<?php
+  <?php
 include_once(dirname(__FILE__) . '/class/include.php');
 
 $ATTRACTION = new Attraction(Null);
@@ -66,7 +66,7 @@ $attractions = $ATTRACTION->all();
                             <h1 class="big-heading">
                                 Attractions
                             </h1>
-                            <p>Varius blandit sit amet</p>
+<!--                            <p>Varius blandit sit amet</p>-->
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ $attractions = $ATTRACTION->all();
                                                 <div class="row">
                                                     <div class="col-md-12"> 
                                                         <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
-                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 122) . '...'; ?></p>
+                                                        <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 45) . '...'; ?></p>
                                                         <span class="btn-center">
                                                             <center><a href="view-attractions.php?id=<?php echo $attraction["id"];?>" class="btn-content1">Read More</a></center>
                                                         </span>
@@ -147,85 +147,6 @@ $attractions = $ATTRACTION->all();
             <div id="totop" class="init">
                 <span class="ti-angle-up"></span>
             </div>  
-
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required>         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
 
         </div>
         <!-- content wraper end --> 

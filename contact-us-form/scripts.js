@@ -13,10 +13,11 @@ jQuery(document).ready(function () {
     jQuery("#txtContact").blur(function () {
         validateEmpty("txtContact", "spanContact");
     });
-
+    
     jQuery("#txtCountry").blur(function () {
         validateEmpty("txtCountry", "spanCountry");
     });
+
     jQuery("#txtSubject").blur(function () {
         validateEmpty("txtSubject", "spanSubject");
     });
@@ -35,7 +36,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.input-validater').keypress(function (e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
 
             if (!validate()) {
                 return;
@@ -51,6 +52,7 @@ jQuery(document).ready(function () {
 //--------------------------------------------------function to check button click --------------------------------------------------
 
 function validate() {
+    
     if (
             validateEmpty("txtName", "spanName") &
             ValidateEmail("txtEmail", "spanEmail") &
@@ -73,14 +75,13 @@ function validate() {
 
 
 function sendForm() {
-
     jQuery.ajax({
         url: "contact-us-form/send-email.php",
         cache: false,
         dataType: "json",
         type: "POST",
         data: {
-            full_lname: jQuery('#txtName').val(),
+            name: jQuery('#txtName').val(),
             email: jQuery('#txtEmail').val(),
             contact: jQuery('#txtContact').val(),
             country: jQuery('#txtCountry').val(),
@@ -95,10 +96,8 @@ function sendForm() {
 
             if (status == "incorrect") {
 
-                jQuery("#capspan").addClass("notvalidated");
-                jQuery("#capspan").html(msg);
-                jQuery("#capspan").show();
-                jQuery("#checking").fadeOut(2000);
+                jQuery("#checking").hide();
+                jQuery("#dismessage").html(msg).delay(1000).show(1000);
 
             } else if (status == "correct") {
                 jQuery("#checking").hide();

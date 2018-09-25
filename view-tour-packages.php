@@ -76,7 +76,7 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
                             <h1 class="big-heading">
                                 <?php echo $TOUR_PACKAGE->title; ?>
                             </h1>
-                            <p>Varius blandit sit amet</p>
+<!--                            <p>Varius blandit sit amet</p>-->
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
                                             if ($key < 4) {
                                                 ?>
                                                 <div class="col-md-3 image">
-                                                    <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                                    <div class="projects-grid onStep img-top" data-animation="fadeInUp" data-time="0">
                                                         <a class="" href="upload/tour-package/date/gallery/<?php echo $photo['image_name']; ?>" data-fancybox="images">
                                                             <div class="middle">
                                                                 <i class="fa fa-search"></i>
@@ -125,11 +125,16 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
                                         ?>
 
                                     </div>
-
                                 </div>
                                 <?php
                             }
                             ?>
+
+                            <span class="">
+                                <center><a href="booking.php?package=<?php echo $id; ?>" class="btn-content">Enquiry Now</a></center>
+                            </span>
+                            
+                            
                         </div>
 
                         <div class="col-md-3 onStep" data-animation="fadeInUp" data-time="600">
@@ -168,85 +173,6 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
             <div id="totop" class="init">
                 <span class="ti-angle-up"></span>
             </div>  
-
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required>         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
 
         </div>
         <!-- content wraper end --> 

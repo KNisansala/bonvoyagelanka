@@ -7,9 +7,9 @@ if (isset($_POST['create'])) {
     $ACTIVITY = new Activities(NULL);
     $VALID = new Validator();
 
-    $ACTIVITY->title = mysql_real_escape_string($_POST['title']);
-    $ACTIVITY->short_description = mysql_real_escape_string($_POST['short_description']);
-    $ACTIVITY->description = mysql_real_escape_string($_POST['description']);
+    $ACTIVITY->title = $_POST['title'];
+    $ACTIVITY->short_description = $_POST['short_description'];
+    $ACTIVITY->description = $_POST['description'];
 
     $dir_dest = '../../upload/activity/';
     $dir_dest_thumb = '../../upload/activity/thumb/';
@@ -122,9 +122,9 @@ if (isset($_POST['update'])) {
     $ACTIVITY = new Activities($_POST['id']);
 
     $ACTIVITY->image_name = $_POST['oldImageName'];
-    $ACTIVITY->title = mysql_real_escape_string($_POST['title']);
-    $ACTIVITY->short_description = mysql_real_escape_string($_POST['short_description']);
-    $ACTIVITY->description = mysql_real_escape_string($_POST['description']);
+    $ACTIVITY->title = $_POST['title'];
+    $ACTIVITY->short_description = $_POST['short_description'];
+    $ACTIVITY->description = $_POST['description'];
 
     $VALID = new Validator();
     $VALID->check($ACTIVITY, [

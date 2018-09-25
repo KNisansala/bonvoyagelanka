@@ -1,3 +1,22 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+$package = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+if (isset($_GET['package'])) {
+    $package = $_GET['package'];
+}
+
+$TOUR_PACKAGE = new TourPackage(Null);
+$tour_packages = $TOUR_PACKAGE->all();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -58,9 +77,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Booking
+                                Enquiry Form
                             </h1>
-                            <p>Perfect Place for Vacation</p>
+<!--                            <p>Perfect Place for Vacation</p>-->
                         </div>
                     </div>
                 </div>
@@ -102,10 +121,28 @@
                                     <div class="col-md-12">
                                         <label>Tour Package<span class="red">*</span></label>
                                         <select name="tour_package" id="tour_package" class="form-control input-validater">
-                                            <option value="1">Select Tour Package</option>
-                                            <option value="2">Select Tour Package</option>
-                                            <option value="3">Select Tour Package</option>
-                                            <option value="4">Select Tour Package</option>
+                                            <option value="">Select Tour Package</option>
+                                            
+                                            //<?php
+//                                                        foreach ($tour_packages as $tour_package){
+//                                            ?>
+                                            <option value="//<?php echo $id; ?>" <?php if($tour_package === ['id']) {echo 'selected="TRUE"'; } ?>><?php echo $tour_package['title']; ?></option>
+                                            //<?php
+//                                                        }
+//                                            ?>
+                                            
+                                            <option value="03 Days Beach Tour"<?php if($package == 1) {echo 'selected="TRUE"'; } ?>>03 Days Beach Tour</option>
+                                            <option value="05 Days Beach Tour"<?php if($package == 2) {echo 'selected="TRUE"'; } ?>>05 Days Beach Tour</option>
+                                            <option value="07 Days Beach Tour"<?php if($package == 3) {echo 'selected="TRUE"'; } ?>>07 Days Beach Tour</option>
+                                            <option value="04 Days Cultural Tour"<?php if($package == 4) {echo 'selected="TRUE"'; } ?>>04 Days Cultural Tour</option>
+                                            <option value="05 Days Cultural Tour"<?php if($package == 5) {echo 'selected="TRUE"'; } ?>>05 Days Cultural Tour</option>
+                                            <option value="07 Days Cultural Tour"<?php if($package == 6) {echo 'selected="TRUE"'; } ?>>07 Days Cultural Tour</option>
+                                            <option value="03 Days Surfing Tour"<?php if($package == 7) {echo 'selected="TRUE"'; } ?>>03 Days Surfing Tour</option>
+                                            <option value="06 Days Surfing Tour"<?php if($package == 8) {echo 'selected="TRUE"'; } ?>>06 Days Surfing Tour</option>
+                                            <option value="07 Days Discover Sri Lanka Tour"<?php if($package == 9) {echo 'selected="TRUE"'; } ?>>07 Days Discover Sri Lanka Tour</option>
+                                            <option value="07 Days Surfing and Cultural Tour"<?php if($package == 10) {echo 'selected="TRUE"'; } ?>>07 Days Surfing and Cultural Tour</option>
+                                            <option value="10 Days Sri Lanka Round Tour"<?php if($package == 11) {echo 'selected="TRUE"'; } ?>>10 Days Sri Lanka Round Tour</option>
+                                            <option value="Adventurous Tours"<?php if($package == 12) {echo 'selected="TRUE"'; } ?>>Adventurous Tours</option>
                                         </select>
                                         <span id="spanPackage"></span>
                                     </div>
@@ -135,7 +172,7 @@
                                     </div>
                                     <div class="col-md-6"> 
                                         <label></label>
-                                        <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                                        <span><?php include("./booking-form/captchacode-widget.php"); ?></span>
                                     </div>
                                 </div>
 
@@ -170,85 +207,6 @@
             <div id="totop" class="init">
                 <span class="ti-angle-up"></span>
             </div>  
-
-            <!-- modal login -->
-            <div id="fLogin" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Log In</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="text" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" required="required">         
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In">
-                                </div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal login end -->
-
-            <!-- modal registration -->
-            <div id="fsignUp" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <div class="modal-header">      
-                            <h4 class="modal-title">Member Registration</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-                                </div>
-                                <div class="form-group"><input type="submit" value="Sign up" class="btn btn-primary btn-block btn-lg"></div>
-                                <div class="clearfix"></div>
-                            </form>       
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#">or Log In</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- modal registration end -->      
-
 
         </div>
         <!-- content wraper end --> 
