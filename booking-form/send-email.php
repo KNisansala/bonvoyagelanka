@@ -6,8 +6,8 @@
 $comany_name = "Bonvoyagelanka";
 $website_name = "www.bonvoyagelanka.com";
 $comConNumber = "+94 76 8261423";
-$comEmail = "amalidinushika93@gmail.com";
-$from = 'amalidinushika93@gmail.com';
+$comEmail = "info@galle.website";
+$from = 'info@galle.website';
 
 
 //----------------------CAPTCHACODE---------------------
@@ -71,7 +71,7 @@ if (
     echo json_encode($response);
     exit();
 } else {
-    $response['status'] = 'correct';
+    $response['status'] = 'incorrect';
     $response['msg'] = "Could not be sent your message";
     echo json_encode($response);
     exit();

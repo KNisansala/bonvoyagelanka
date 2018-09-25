@@ -7,8 +7,8 @@ if (isset($_POST['create'])) {
     $PHOTO_ALBUM = new PhotoAlbum(NULL);
     $VALID = new Validator();
 
-    $PHOTO_ALBUM->title = mysql_real_escape_string($_POST['title']);
-    $PHOTO_ALBUM->description = mysql_real_escape_string($_POST['description']);
+    $PHOTO_ALBUM->title = $_POST['title'];
+    $PHOTO_ALBUM->description = $_POST['description'];
 
     $dir_dest = '../../upload/photo-album/';
 
@@ -36,7 +36,6 @@ if (isset($_POST['create'])) {
 
     $VALID->check($PHOTO_ALBUM, [
         'title' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 
@@ -91,14 +90,13 @@ if (isset($_POST['update'])) {
     $PHOTO_ALBUM = new PhotoAlbum($_POST['id']);
 
     $PHOTO_ALBUM->image_name = $_POST['oldImageName'];
-    $PHOTO_ALBUM->title = mysql_real_escape_string($_POST['title']);
-    $PHOTO_ALBUM->description = mysql_real_escape_string($_POST['description']);
+    $PHOTO_ALBUM->title = $_POST['title'];
+    $PHOTO_ALBUM->description = $_POST['description'];
 
     $VALID = new Validator();
 
     $VALID->check($PHOTO_ALBUM, [
         'title' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 

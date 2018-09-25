@@ -15,19 +15,19 @@
          
          <div class="col-md-6">
           <div class="right">
-            <div id="sub-icon" class="social-icons-subnav">
+            <div id="" class="social-icons-subnav">
                 <a href="#"><span class="ti-facebook"></span></a>
                 <a href="#"><span class="ti-dribbble"></span></a>
                 <a href="#"><span class="ti-twitter"></span></a>
                 <a href="#"><span class="ti-instagram"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
             </div>
-            <div class="social-icons-subnav">
+<!--            <div class="social-icons-subnav">
               <a data-toggle="modal" data-target="#fLogin"><span class="ti-lock"></span> Login</a>
             </div>    
             <div class="social-icons-subnav hidden-sm hidden-xs">
               <a data-toggle="modal" data-target="#fsignUp"><span class="ti-user"></span> Sign up</a>
-            </div>
+            </div>-->
           </div>
          </div>
         

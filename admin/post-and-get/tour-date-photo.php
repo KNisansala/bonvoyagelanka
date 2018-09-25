@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
    $TOUR_DATE_PHOTO->tour_date = $_POST['id'];
-   $TOUR_DATE_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+   $TOUR_DATE_PHOTO->caption = $_POST['caption'];
 
     $dir_dest = '../../upload/tour-package/date/gallery/';
     $dir_dest_thumb = '../../upload/tour-package/date/gallery/thumb/';

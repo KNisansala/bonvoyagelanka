@@ -953,11 +953,11 @@ li>a:only-child:after {
     height: 100%;
 }
 #about-us-1 .image-container {
-    background: url(../img/home/about-1.jpg);
+    background: url(../img/home/about-11.jpg);
     background-size: cover;
 }
 #about-us-2 .image-container {
-    background: url(../img/home/about-2.jpg);
+    background: url(../img/home/about-22.jpg);
     background-size: cover;
 }
 .count-about {

@@ -107,44 +107,6 @@ $sliders = Slider::all();
                             }
                         }
                         ?>
-
-<!--                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-6.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Tour Packages</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                        <a href="#" class="btn-content">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                            <div class="feature-1">
-                                <div class="cont-img">
-                                    <img alt="img-cont" class="img-responsive" src="img/home/tour-7.jpg">
-                                </div>
-                                <div class="cont-detail">
-                                    <h3 class="big-heading"><span class="color">Destinations</span></h3>
-                                    <p class="max-char">Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,ocurreret pertinacia pri an. No mei nibh consectetuer</p>
-                                    <div class="star-content color">
-                                    </div>
-                                    <div class="btn-center">
-                                        <a href="#" class="btn-content">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -162,13 +124,20 @@ $sliders = Slider::all();
 
                                 <div class="col-lg-6 autoheight-1">
                                     <div class="p-90">
-                                        <h2 class="big-heading space-title">
+                                        <h3 class="big-heading space-title">
                                             <span class="first">Perfect</span> Place For Vacation
                                             <span class="devider-cont"></span>
-                                        </h2>          
+                                        </h3>          
 
                                         <p class="intro">              
-                                            Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et sociis natoque penatibus et magnis dis parturient montes. </p> 
+                                            <i>“Holiday is a dream and we know it”</i>
+
+                                            We, the team BONVOYAGELANKA travel crew is privileged to show you and to
+                                            take you around the most beautiful island in the world.
+                                            It obvious that Sri Lanka is well known for its amazing diversity of cultures, the
+                                            natural beauty of the landscape and a glorious history dating back over 2500
+                                            years..... </p> 
+                                        <a class="" href="about.php">View More >></a>
                                     </div>   
                                     <div class="clearfix"></div>
                                 </div>
@@ -187,14 +156,17 @@ $sliders = Slider::all();
 
                                 <div class="col-lg-6 autoheight-2">
                                     <div class="p-90">
-                                        <h2 class="big-heading space-title">
+                                        <h3 class="big-heading space-title">
                                             <span class="first">About</span> Our Service
                                             <span class="devider-cont"></span>
-                                        </h2>
+                                        </h3>
 
                                         <p class="intro">
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Cum sociis dis montes.</p>
-
+                                            Numerous firms and agencies have merged to cater the need of
+                                            transportation, but we definitely would try to make our customer delight by
+                                            offering and outstanding service by being a team who always go extra mile to
+                                            exceed the expectation of our guest.....</p>
+                                        <a class="" href="about.php">View More >></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -320,7 +292,7 @@ $sliders = Slider::all();
                             foreach ($attractions as $attraction) {
                                 ?>
                                 <div class="item">
-                                    <div class="gal-home">
+                                    <div class="gal-home gal-home1">
                                         <a href="#"></a>
                                         <div class="hovereffect">
                                             <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>" />
@@ -329,9 +301,26 @@ $sliders = Slider::all();
                                             <div class="row">
                                                 <div class="col-md-12"> 
                                                     <h4 class=""><?php echo $attraction['title']; ?></h4>
-                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 90) . '...'; ?></p>
-                                                    <span class="readmore-span1">
-                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a>
+                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 118) . '...'; ?></p>
+                                                    <span class="btn-center">
+                                                        <center><a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a></center>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gal-home gal-home2">
+                                        <a href="#"></a>
+                                        <div class="hovereffect">
+                                            <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>" />
+                                        </div>
+                                        <div class="gal-home-content">
+                                            <div class="row">
+                                                <div class="col-md-12"> 
+                                                    <h4 class=""><?php echo $attraction['title']; ?></h4>
+                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 85) . '...'; ?></p>
+                                                    <span class="btn-center">
+                                                        <center><a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a></center>
                                                     </span>
                                                 </div>
                                             </div>
@@ -453,6 +442,18 @@ $sliders = Slider::all();
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
         <script>
+            $(window).load(function () {
+                var width = $(window).width();
 
-        </body>
-        </html>
+                if (1365 < width > 1279) {
+                    $('.gal-home2').removeClass('hidden');
+                    $('.gal-home1').addClass('hidden');
+                } else {
+                    $('.gal-home1').removeClass('hidden');
+                    $('.gal-home2').addClass('hidden');
+                }
+            });
+        </script>
+
+    </body>
+</html>
