@@ -23,9 +23,9 @@ $tour_packages = $TOUR_PACKAGE->all();
     <head>
         <meta charset="utf-8">
         <title>Booking | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="booking tour packages, booking,book now, tour packages, inquiry now, Enquiry now, tour packages booking" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -77,7 +77,7 @@ $tour_packages = $TOUR_PACKAGE->all();
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="big-heading">
-                                Enquiry Form
+                                Inquiry Form
                             </h1>
 <!--                            <p>Perfect Place for Vacation</p>-->
                         </div>

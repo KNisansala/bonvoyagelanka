@@ -18,9 +18,9 @@ $services = $SERVICE->all();
     <head>
         <meta charset="utf-8">
         <title><?php echo $SERVICE->title; ?> | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="services, bonvoyagelanka, services of bonvoyagelanka<?php foreach ($services as $service){ echo ','.$service['title'];}?>" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -80,7 +80,7 @@ $services = $SERVICE->all();
             </section>
             <!-- subheader end -->
 
-            <!-- services -->
+            <!-- left content -->
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
@@ -106,110 +106,48 @@ $services = $SERVICE->all();
                                 </div>
                             </div>
                         </div>
+                        <!-- left content end -->
 
-                        <div class="col-md-4 onStep" data-animation="fadeInUp" data-time="600">
-                            <div class="widget hidden-md hidden-sm hidden-xs">
+                        <!-- right content -->
+                        <div class="col-md-4">
+                            <aside>
 
-                                <?php
-                                foreach ($services as $key => $service) {
-                                    if ($key < 4) {
-//                                        
-                                        ?>
-<!--                                        <div class="gal-home">
-                                            <a href="#"></a>
-                                            <div class="hovereffect">
-                                                <img alt="imageportofolio" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
-                                            </div>
-                                            <div class="gal-home-content">
-                                                <div class="row">
-                                                    <div class="col-md-12"> 
-                                                        <h4 class="autoheight"><?php echo $service['title'] ?></h4>
-                                                        <p class="para-tours"><?php echo substr($service['short_description'], 0, 100) . '...'; ?></p>
-                                                        <span class="readmore-span1">
-                                                            <center><a href="view-services.php?id=<?php echo $service["id"]; ?>" class="btn-content1">Read More</a></center>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>-->
+                                <!-- widget -->
+                                <div class="widget">
+                                    <h5>
+                                        Recent Services
+                                    </h5>
 
-                                        <div class="gal-home" style="background: #632b2b33;">
-                                            <div class="col-xs-6 col-sm-5 col-md-5 attraction">
+                                    <div class="devider-widget">
+                                    </div>
 
-                                                <div class="hovereffect">
-                                                    <a href="view-services.php?id=<?php echo $service["id"]; ?>">
-                                                        <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/service/<?php echo $service['image_name'] ?>">
-                                                        <div class="middle">
-                                                            <i class="fa fa-search"></i>
-                                                        </div>
-
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-5 col-md-7 entry-box">
-                                                <div class="gal-home">
-                                                    <div class="row">
-                                                        <div class="col-md-12"> 
-                                                            <a href="view-services.php?id=<?php echo $service["id"]; ?>">
-                                                                <h4 class="autoheight"><?php echo $service['title'] ?></h4>
-                                                                <p class="gal-para"><?php echo substr($service['short_description'], 0, 32) . '...'; ?></p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="recent">
                                         <?php
-                                    }
-                                }
-//                                
-                                ?>
-
-                            </div>
-                            <div class="widget hidden-lg">
-
-                                <?php
-                                foreach ($services as $key => $service) {
-                                    if ($key < 3) {
+                                        foreach ($services as $key => $service) {
+                                            if ($key < 5) {
 //                                        
-                                        ?>
-                                <div class="col-sm-3">
-                                        <div class="gal-home" style="background: #632b2b33;">
-                                            <div class="col-xs-12 col-sm-12 col-md-5 attraction">
-
-                                                <div class="hovereffect">
+                                                ?>
+                                                <div>
                                                     <a href="view-services.php?id=<?php echo $service["id"]; ?>">
-                                                        <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/service/<?php echo $service['image_name'] ?>">
-                                                        <div class="middle">
-                                                            <i class="fa fa-search"></i>
-                                                        </div>
-
+                                                        <img alt="#" class="pull-left" src="upload/service/<?php echo $service['image_name'] ?>">
                                                     </a>
+                                                    <h6>
+                                                        <a href="view-services.php?id=<?php echo $service["id"]; ?>"><?php echo $service['title'] ?></a>
+                                                    </h6>
+
+                                                    <p><?php echo substr($service['short_description'], 0, 75) . '...'; ?></p>
                                                 </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-7 entry-box">
-                                                <div class="gal-home">
-                                                    <div class="row">
-                                                        <div class="col-md-12"> 
-                                                            <a href="view-services.php?id=<?php echo $service["id"]; ?>">
-                                                                <h4 class="autoheight"><?php echo $service['title'] ?></h4>
-                                                                <p class="gal-para"><?php echo substr($service['short_description'], 0, 50) . '...'; ?></p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+                                    </div>
                                 </div>
-                                        <?php
-                                    }
-                                }
-//                                
-                                ?>
-
-                            </div>
-
+                                <!-- widget end -->
+                            </aside>
                         </div>
+                        <!-- right content end -->
+
                     </div>
                 </div>
             </section>

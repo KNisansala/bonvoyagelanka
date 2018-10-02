@@ -131,6 +131,12 @@
     font-size: 11pt;
     text-align: center;
     margin: 10px auto;
+    font-weight: 800;
+}
+#testimony h5 {
+    font-size: 9pt;
+    text-align: center;
+    margin: 10px auto;   
 }
 #owl-testimonial .owl-dots {
     float: none;
@@ -160,13 +166,14 @@
     margin-top: 50px;
 }
 .btn-readmore{
-    margin-right: 84px;
-    top: -46px;
-    float: right;
+    /*    margin-right: 84px;
+        top: -46px;
+        float: right;*/
+    margin-left: 110px;
 }
 .img-back{
     width: 85px;
-    height: 88px;
+    height: 85px;
     background: #fff;
     margin: -63px auto 0px;
     text-align: center;
@@ -207,6 +214,7 @@
     font-family: "Playfair Display", serif;
     position: relative;
     text-transform: uppercase;
+    font-weight: 800;
 }
 .big-heading-light1 {
     font-weight: 600;
@@ -290,7 +298,7 @@ hr {
 }
 .form-control {
     width: 100% !important;
-    padding: 10px 20px 6px 35px;
+    padding: 10px 20px 6px 20px;
     font-size: 13px;
     line-height: 24px;
     color: #969595;
@@ -369,7 +377,7 @@ h3 {
     margin-top: 0px;
 }
 .services p{
-    margin: 0 0 0px;
+    margin: 0 0 15px;
 }
 .img-top{
     top: 10px;
@@ -407,6 +415,85 @@ h3 {
 }
 .attraction{
     padding: 10px 10px 10px 10px;
+}
+.form{
+    position: absolute;
+    z-index: 99999;
+    margin-top: -475px;
+    margin-left: 100px;
+}
+.container1{
+    width: 350px;
+    padding: 20px;
+    background: #00000080;
+    right: 82px;
+}
+#form-contact1 input {
+    height: 40px;
+}
+#form textarea.form-control {
+    height: 60px;
+}
+.cap-margin{
+    margin-top: -36px;
+    margin-left: -15px;
+}
+.input-margin{
+    margin-left: -6px;
+}
+#form .form-group{
+    margin-bottom: 12px;
+}
+.btn-contact-home {
+    width: auto;
+    height: 35px;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 1pt;
+    font-style: normal;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background: #fc9f1c;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 2px;
+    outline: none;
+    text-shadow: none;
+    margin: 0px auto;
+    margin-left: auto;
+    margin-left: 0px;
+    padding: 0 35px;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-top {
+    background: #fff;
+    padding: 0px;
+    margin: -14px;
+    margin: -40px -35px 20px -35px;
+    height: 35px;
+}
+
+.container1 h3{
+    color: #fc9f1c;
+    text-align: center;
+    padding: 5px;
+}
+.copy{
+    margin-top: 30px;
+}
+.para-act{
+    background: #00000080;
+    padding: 20px 10px;
+}
+#testimony p {
+    line-height: 40px;
+    text-align: center;
 }
 /*#about-us-1 .p-90 {padding: 55px;
 }
@@ -453,7 +540,8 @@ h3 {
         margin-left: 0px;
     }
     .btn-readmore {
-        top: -18px;
+        top: 15px;
+        right: -30px;
     }
     .big-heading-light1 {
         margin-left: 0px;
@@ -540,6 +628,31 @@ h3 {
         margin-top: 25px;
     }
 
+    .form{
+        z-index: 99999;
+        margin-top: 28px;
+        margin-left: 0px;
+    }
+    .cap-margin{
+        margin-top: 0px;
+        margin-left: -112px;
+    }
+    .container1 {
+        padding: 20px;
+        background: #000000b3;
+        position: relative;
+        width: 100%;
+        right: 0px
+    }
+    .para-act {
+        background: #00000080;
+        padding: 14px 10px;
+    }
+    footer.main .logo{ 
+        margin-top:0px; 
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width:769px) and (max-width:1279px){
@@ -586,7 +699,11 @@ h3 {
 
 @media (width:320px) {
     .features .bg-img {
-        padding: 35px;
+        padding: 33px;
+    }
+    .btn-readmore {
+        top: 15px;
+        right: 15px;
     }
 }
 
@@ -599,6 +716,10 @@ h3 {
         }*/
     .btn-readmore {
         margin-right: 110px;
+    }
+    .btn-readmore {
+        top: 15px;
+        right: 0px;
     }
 }
 @media (width:768px) {
@@ -620,6 +741,10 @@ h3 {
     }
     .col-sm-3 {
         width: 33%;
+    }
+    .btn-readmore {
+        top: 15px;
+        right: -210px;
     }
 
 }

@@ -1,5 +1,20 @@
 <?php
 ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
+
+$id = '';
+$activity = '';
+$attraction = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+if (isset($_GET['activity'])) {
+    $activity = $_GET['activity'];
+}
+if (isset($_GET['attraction'])) {
+    $attraction = $_GET['attraction'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -8,9 +23,9 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
     <head>
         <meta charset="utf-8">
         <title>Contacts | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="travel website contact numbers,contact travel websites in srilanka,contact bonvoyagelanka,contact sri lanka travel, sri lanka,bonvoyagelanka, tarvel, tourism, best travel agent, best tour operator in sri lanka, travel guide" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -119,7 +134,7 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
                                     <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Security code >> ">
                                     <span id="capspan" ></span>
                                 </div>
-                                <div class="col-md-4 cap-margin input-margin"> 
+                                <div class="col-md-4 input-margin"> 
                                     <label></label>
                                     <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
                                 </div>
@@ -143,10 +158,12 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
                             <h3 class="heading-cont">Contact Information</h3>
                             <address class="cont-1">
                                 <span>
-                                    No. 205, Bokundara, Piliyandala.</span> 
-                                <span><strong>PHONE:</strong> +94 11 3 663500</span> 
-                                <span><strong>EMAIL:</strong><a href="mailto:companyname@gmail.com"> mail@sublime.lk</a></span> 
-                                <span><strong>WEB:</strong><a href="#"> www.bonvoyagelanka.com</a></span>
+                                    Shramadana Mawatha, Ethukala, Negombo.</span> 
+                                <span><strong>PHONE:</strong> +94 71 433 8433</span> 
+                                <span><img src="img/whatsapp.png" alt=""/> +94 71 433 8433</span>
+                                <span><img src="img/viber.png" alt=""/> +94 71 433 8433</span>
+                                <span><strong>EMAIL:</strong><a href="mailto:info@bonvoyagelanka.com"> info@bonvoyagelanka.com</a></span> 
+                                <span><strong>WEB:</strong><a href="http://bonvoyagelanka.com/"> www.bonvoyagelanka.com</a></span>
                             </address>
                         </div>
                         <!-- address end -->
@@ -162,7 +179,7 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
                 <div class="container-fluid m-5-hor">
                     <div class="row">
                         <div id="map-1">
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.803855932434!2d79.8211858627196!3d6.921922576462158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1535453693635" width="1270" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0471342834253!2d79.8446867147747!3d7.235464194776872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2eeb4a1ab2359%3A0xacb395d0bea4d625!2sShramadana+Mawatha%2C+Negombo!5e0!3m2!1sen!2slk!4v1538097711944" width="1270" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     </div>
                 </div> 

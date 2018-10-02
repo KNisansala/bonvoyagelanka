@@ -13,9 +13,9 @@ $services = $SERVICE->all();
     <head>
         <meta charset="utf-8">
         <title>Services | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="services, bonvoyagelanka, services of bonvoyagelanka<?php foreach ($services as $service){ echo ','.$service['title'];}?>" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -84,14 +84,14 @@ $services = $SERVICE->all();
                         <?php
                         foreach ($services as $service) {
                                 ?>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="feature-1 gal-home1">
                                 <div class="cont-img">
                                     <img alt="img-cont" class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>">
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
-                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 65) . '...'; ?></p>
+                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 400) . '...'; ?></p>
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">
@@ -107,7 +107,7 @@ $services = $SERVICE->all();
                                 </div>
                                 <div class="cont-detail">
                                     <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
-                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 120) . '...'; ?></p>
+                                    <p class="max-char"><?php echo substr($service['short_description'], 0, 400) . '...'; ?></p>
                                     <div class="star-content color">
                                     </div>
                                     <div class="btn-center">

@@ -18,9 +18,9 @@ $attractions = $ATTRACTION->all();
     <head>
         <meta charset="utf-8">
         <title><?php echo $ATTRACTION->title; ?> | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="travel sites in srilanka,travel places in srilanka, tour places, attractions in sri lanka, destinations in sri lanka, sri lanka attrctions, sri lanka destinations, attractions, destinations<?php foreach ($attractions as $attraction){ echo ','.$attraction['title'];}?>" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -80,7 +80,7 @@ $attractions = $ATTRACTION->all();
             </section>
             <!-- subheader end -->
 
-            <!-- services -->
+            <!-- left content -->
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
@@ -107,16 +107,21 @@ $attractions = $ATTRACTION->all();
                                     </p>
                                 </div>
                             </div>
+                            <span class="">
+                                <center><a href="contacts.php?attraction=<?php echo $id; ?>" class="btn-content">Inquiry Now</a></center>
+                            </span>
                         </div>
 
-                        <div class="col-md-4 onStep" data-animation="fadeInUp" data-time="600">
+                        <!-- left content end -->
+
+<!--                        <div class="col-md-4 onStep" data-animation="fadeInUp" data-time="600">
                             <div class="widget hidden-md hidden-sm hidden-xs">
 
                                 <?php
                                 foreach ($attractions as $key => $attraction) {
                                     if ($key < 10) {
                                         ?>
-                                        <!--                                <div class="gal-home">
+                                                                        <div class="gal-home">
                                                                             <a href="#"></a>
                                                                                 <div class="hovereffect">
                                                                                     <img alt="imageportofolio" class="img-responsive" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
@@ -132,41 +137,41 @@ $attractions = $ATTRACTION->all();
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                        </div>-->
-                                        
-                                            <div class="gal-home" style="background: #632b2b33;">
-                                                <div class="col-xs-6 col-sm-5 col-md-5 attraction">
+                                                                        </div>
 
-                                                    <div class="hovereffect">
-                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
-                                                            <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
-                                                            <div class="middle">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
+                                        <div class="gal-home" style="background: #632b2b33;">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 attraction">
 
-                                                        </a>
-                                                    </div>
+                                                <div class="hovereffect">
+                                                    <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                        <img alt="imageportofolio" class="img-responsive img-middle1" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                                        <div class="middle">
+                                                            <i class="fa fa-search"></i>
+                                                        </div>
+
+                                                    </a>
                                                 </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-7 entry-box">
-                                                    <div class="gal-home">
-                                                        <div class="row">
-                                                            <div class="col-md-12"> 
-                                                                <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
-                                                                    <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
-                                                                    <p class="gal-para"><?php echo substr($attraction['short_description'], 0, 35) . '...'; ?></p>
-                                                                </a>
-                                                            </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-7 entry-box">
+                                                <div class="gal-home">
+                                                    <div class="row">
+                                                        <div class="col-md-12"> 
+                                                            <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                                <h4 class="autoheight"><?php echo $attraction['title']; ?></h4>
+                                                                <p class="gal-para"><?php echo substr($attraction['short_description'], 0, 35) . '...'; ?></p>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        
+                                        </div>
+
                                         <?php
                                     }
                                 }
                                 ?>
                             </div>
-                            
+
                             <div class="widget hidden-lg">
 
                                 <?php
@@ -207,7 +212,46 @@ $attractions = $ATTRACTION->all();
                                 ?>
                             </div>
 
+                        </div>-->
+                        <!-- right content -->
+                        <div class="col-md-4">
+                            <aside>
+
+                                <!-- widget -->
+                                <div class="widget">
+                                    <h5>
+                                        Recent Attractions
+                                    </h5>
+
+                                    <div class="devider-widget">
+                                    </div>
+
+                                    <div class="recent">
+                                        <?php
+                                        foreach ($attractions as $key => $attraction) {
+                                            if ($key < 10) {
+                                                ?>
+                                                <div>
+                                                    <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>">
+                                                        <img alt="#" class="pull-left" src="upload/attraction/<?php echo $attraction['image_name'] ?>">
+                                                    </a>
+                                                    <h6>
+                                                        <a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>"><?php echo $attraction['title']; ?></a>
+                                                    </h6>
+
+                                                    <p><?php echo substr($attraction['short_description'], 0, 75) . '...'; ?></p>
+                                                </div>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <!-- widget end -->
+                            </aside>
                         </div>
+                        <!-- right content end -->
+
                     </div>
                 </div>
             </section>

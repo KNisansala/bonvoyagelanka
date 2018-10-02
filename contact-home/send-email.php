@@ -15,23 +15,14 @@ session_start();
 
 
 $response = array();
-if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
-    $response['status'] = 'incorrect';
-    $response['msg'] = 'Security Code is invalid';
-    echo json_encode($response);
-    exit();
-}
+
 
 //----------------------Visitor Information---------------------
 
 
 $full_lname = $_POST['name'];
 $visitor_email = $_POST['email'];
-$contact = $_POST['contact'];
-$country = $_POST['country'];
-//$subject = $_POST['subject'];
 $message = $_POST['message'];
-$captchacode = $_POST['captchacode'];
 
 
 $subject = 'New Website Enquiry';

@@ -62,7 +62,7 @@ body {
     font-size: 13px;
     line-height: 1.9em;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: .6px;
     color: #4e4e4e;
     background: #fff;
@@ -605,7 +605,7 @@ header.show {
 }
 .navbar-brand.white {
     position: relative;
-    top: 0px;
+    top: 10px;
     left: 0px;
     z-index: 2;
 }
@@ -1071,6 +1071,7 @@ li>a:only-child:after {
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
+    padding: 41px;
 }
 .features .bg-img-1 {
     width: 100%;
@@ -1127,7 +1128,8 @@ sup.subtour{
     height: 400px;
 }
 .cont-detail{
-    padding: 30px;
+    padding: 20px;
+    text-align: justify;
 }
 .star-content.color{
     margin-bottom: 30px;

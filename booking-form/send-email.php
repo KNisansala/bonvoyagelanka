@@ -4,10 +4,10 @@
 //----------------------Company Information---------------------
 
 $comany_name = "Bonvoyagelanka";
-$website_name = "www.bonvoyagelanka.com";
-$comConNumber = "+94 76 8261423";
-$comEmail = "info@galle.website";
-$from = 'info@galle.website';
+$website_name = "bonvoyagelanka.com";
+$comConNumber = "+94 71 433 8433";
+$comEmail = "info@bonvoyagelanka.com";
+$from = 'info@bonvoyagelanka.com';
 
 
 //----------------------CAPTCHACODE---------------------

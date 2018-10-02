@@ -20,9 +20,9 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
     <head>
         <meta charset="utf-8">
         <title><?php echo $TOUR_PACKAGE->title; ?> | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="tour packages in sri lanka, travel packages, package tours, holidays, sri lanka tour packages, sri lanka tours<?php foreach ($tour_packages as $tour_package){ echo ','.$tour_package['title'];}?>" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -131,7 +131,7 @@ $tour_dates = $TOUR_DATE->getTourDatesById($id);
                             ?>
 
                             <span class="">
-                                <center><a href="booking.php?package=<?php echo $id; ?>" class="btn-content">Enquiry Now</a></center>
+                                <center><a href="booking.php?package=<?php echo $id; ?>" class="btn-content">Inquiry Now</a></center>
                             </span>
                             
                             

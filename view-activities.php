@@ -18,9 +18,9 @@ $activities = $ACTIVITY->all();
     <head>
         <meta charset="utf-8">
         <title><?php echo $ACTIVITY->title; ?>  | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="activities in bonvoyagelanka, bonvoyagelanka, surfing in sri lanka, sri lanka, hikkaduwa sri lanka, things to do in sri lanka, activities in sri lanka<?php foreach ($activities as $activity){ echo ','.$activity['title'];}?>" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
@@ -80,7 +80,7 @@ $activities = $ACTIVITY->all();
             </section>
             <!-- subheader end -->
 
-            <!-- services -->
+            <!-- left content -->
             <section class="services whitepage">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
@@ -108,89 +108,51 @@ $activities = $ACTIVITY->all();
                                     </p>
                                 </div>
                             </div>
+                            <span class="">
+                                <center><a href="contacts.php?activity=<?php echo $id; ?>" class="btn-content">Inquiry Now</a></center>
+                            </span>
                         </div>
 
-                        <div class="col-md-4 onStep" data-animation="fadeInUp" data-time="600">
-                            <div class="widget hidden-md hidden-sm hidden-xs">
+                        <!-- left content end -->
 
-                                <?php
-                                foreach ($activities as $key => $activity) {
-                                    if ($key < 10) {
-                                        ?>
-                                        <div class="gal-home" style="background: #632b2b33;">
-                                            <div class="col-xs-6 col-sm-5 col-md-5 activity">
+                        <!-- right content -->
+                        <div class="col-md-4">
+                            <aside>
 
-                                                <div class="hovereffect">
+                                <!-- widget -->
+                                <div class="widget">
+                                    <h5>
+                                        Recent Activities
+                                    </h5>
+
+                                    <div class="devider-widget">
+                                    </div>
+
+                                    <div class="recent">
+                                        <?php
+                                        foreach ($activities as $key => $activity) {
+                                            if ($key < 10) {
+                                                ?>
+                                                <div>
                                                     <a href="view-activities.php?id=<?php echo $activity["id"]; ?>">
-                                                        <img alt="imageportofolio" class="img-responsive img-middle-activity" src="upload/activity/<?php echo $activity['image_name'] ?>">
-                                                        <div class="middle">
-                                                            <i class="fa fa-search"></i>
-                                                        </div>
-
+                                                        <img alt="#" class="pull-left" src="upload/activity/<?php echo $activity['image_name'] ?>">
                                                     </a>
+                                                    <h6>
+                                                        <a href="view-activities.php?id=<?php echo $activity["id"]; ?>"><?php echo $activity['title']; ?></a>
+                                                    </h6>
+
+                                                    <p><?php echo substr($activity['short_description'], 0, 70) . '...'; ?></p>
                                                 </div>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-7 col-md-7 entry-box1">
-                                                <div class="gal-home">
-                                                    <div class="row">
-                                                        <div class="col-md-12"> 
-                                                            <a href="view-activities.php?id=<?php echo $activity["id"]; ?>">
-                                                                <h4 class="autoheight"><?php echo $activity['title']; ?></h4>
-                                                                <p class="gal-para"><?php echo substr($activity['short_description'], 0, 32) . '...'; ?></p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-
-                            </div>
-
-                            <div class="widget hidden-lg">
-
-                                <?php
-                                foreach ($activities as $key => $activity) {
-                                    if ($key < 3) {
+                                                <?php
+                                            }
+                                        }
                                         ?>
-                                        <div class="col-sm-3">
-                                            <div class="gal-home" style="background: #632b2b33;">
-                                                <div class="col-xs-12 col-sm-12 col-md-5 activity">
-
-                                                    <div class="hovereffect">
-                                                        <a href="view-activities.php?id=<?php echo $activity["id"]; ?>">
-                                                            <img alt="imageportofolio" class="img-responsive img-middle-activity" src="upload/activity/<?php echo $activity['image_name'] ?>">
-                                                            <div class="middle">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-7 entry-box1">
-                                                    <div class="gal-home">
-                                                        <div class="row">
-                                                            <div class="col-md-12"> 
-                                                                <a href="view-activities.php?id=<?php echo $activity["id"]; ?>">
-                                                                    <h4 class="autoheight"><?php echo $activity['title']; ?></h4>
-                                                                    <p class="gal-para"><?php echo substr($activity['short_description'], 0, 50) . '...'; ?></p>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                    }
-                                }
-                                ?>
-
-                            </div>
+                                    </div>
+                                </div>
+                                <!-- widget end -->
+                            </aside>
                         </div>
+                        <!-- right content end -->
 
                     </div>
                 </div>

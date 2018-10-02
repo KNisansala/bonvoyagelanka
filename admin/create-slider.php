@@ -59,19 +59,11 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="url" class="form-control" name="url" >
-                                                <label class="form-label">URL</label>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="description">Description</label>
                                         <div class="form-line">
-                                            <input type="text" id="description" class="form-control" name="description" >
+                                            <textarea id="description" class="form-control" name="description" rows="5"></textarea>
                                         </div>
 
                                     </div>
@@ -139,34 +131,7 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="js/pages/ui/dialogs.js"></script>
 
 
-        <script src="tinymce/js/tinymce/tinymce.min.js"></script>
-        <script>
-            tinymce.init({
-                selector: "#description",
-                // ===========================================
-                // INCLUDE THE PLUGIN
-                // ===========================================
-
-                plugins: [
-                    "advlist autolink lists link image charmap print preview anchor",
-                    "searchreplace visualblocks code fullscreen",
-                    "insertdatetime media table contextmenu paste"
-                ],
-                // ===========================================
-                // PUT PLUGIN'S BUTTON on the toolbar
-                // ===========================================
-
-                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
-                // ===========================================
-                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
-                // ===========================================
-
-                relative_urls: false
-
-            });
-
-
-        </script>
+        
     </body>
 
 </html>
