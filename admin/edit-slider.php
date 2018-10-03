@@ -68,15 +68,6 @@ $SLIDER = new Slider($id);
                                         </div>
                                     </div>
 
-
-                                    <div class="col-sm-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="url" class="form-control" value="<?php echo $SLIDER->url; ?>"  name="url">
-                                                <label class="form-label">URL</label>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="description">Description</label>
                                         <div class="form-line">
@@ -113,35 +104,6 @@ $SLIDER = new Slider($id);
         <script src="js/demo.js"></script>
         <script src="js/add-new-ad.js" type="text/javascript"></script>
 
-
-        <script src="tinymce/js/tinymce/tinymce.min.js"></script>
-        <script>
-            tinymce.init({
-                selector: "#description",
-                // ===========================================
-                // INCLUDE THE PLUGIN
-                // ===========================================
-
-                plugins: [
-                    "advlist autolink lists link image charmap print preview anchor",
-                    "searchreplace visualblocks code fullscreen",
-                    "insertdatetime media table contextmenu paste"
-                ],
-                // ===========================================
-                // PUT PLUGIN'S BUTTON on the toolbar
-                // ===========================================
-
-                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
-                // ===========================================
-                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
-                // ===========================================
-
-                relative_urls: false
-
-            });
-
-
-        </script>
     </body>
 
 </html>

@@ -2,7 +2,7 @@
 $captchacode = rand();
 ?>               
 
-<img src="contact-us-form/Generate_Captcha_Code.php?rand=<?php echo $captchacode; ?>" id='captchaimg'  style=" margin-top: 17px;">  
+<img src="contact-us-form/Generate_Captcha_Code.php?rand=<?php echo $captchacode; ?>" id='captchaimg'  style=" margin-top: 20px;">  
 
 <a href='javascript: refreshCaptcha();' class="contact-detail">
     <div class="refreshbox">

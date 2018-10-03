@@ -10,6 +10,9 @@ $activities = $ACTIVITY->all();
 $SERVICE = New Service(Null);
 $services = $SERVICE->all();
 
+$COMMENT = New Comments(Null);
+$comments = $COMMENT->all();
+
 $sliders = Slider::all();
 ?>
 
@@ -18,11 +21,12 @@ $sliders = Slider::all();
 
     <head>
         <meta charset="utf-8">
-        <title>Bonvoyagelanka</title>
-        <meta content="" name="description">
+        <title>Bonvoyage Lanka | Sri Lanka Travel Services | Airport Transfer | Hotel Transfer</title>
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world.">
+        <meta content="Bonvoyage Lanka, Sri Lanka Travel Services, Airport Transfer, Hotel Transfer, Bonvoyage, Tour Packages in Sri Lanka, Activities in Sri Lanka, Attractions in Sri Lanka, Tourism Transport, Sri Lanka Tour Packages, Sri Lanka Holiday Tours, Sri Lanka Holiday Trip, Tours in Sri Lanka, Sri Lanka Round Tours, Sri Lanka Tour Sites, Visit Sri Lanka, Tour Sites" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
         <!-- Bootstrap CSS -->
@@ -44,6 +48,13 @@ $sliders = Slider::all();
         <link href="css/on3step-style.css" rel="stylesheet">
         <link href="css/queries-on3step.css" media="all" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="contact-home/style.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .sec-active{
+                padding: 25px 0 90px 0;
+            }   
+        </style>
     </head>
 
     <body>
@@ -76,7 +87,7 @@ $sliders = Slider::all();
             </div>
             <!-- home end -->
 
-            <!-- section search -->
+            <!-- section service home -->
             <section class="frm-clean ">
                 <div class="container-fluid">
                     <div class="row">
@@ -92,7 +103,7 @@ $sliders = Slider::all();
                                         </div>
                                         <div class="cont-detail">
                                             <h3 class="big-heading"><span class="color"><?php echo $service['title'] ?></span></h3>
-                                            <p class="max-char"><?php echo substr($service['short_description'], 0, 85) . '...'; ?></p>
+                                            <p class="max-char"><?php echo $service['short_description']; ?></p>
                                             <div class="star-content color">
                                             </div>
                                             <div class="btn-center">
@@ -110,7 +121,7 @@ $sliders = Slider::all();
                     </div>
                 </div>
             </section>
-            <!-- section search end -->
+            <!-- section service home end -->
 
             <!--  top rated --> 
             <section aria-label="top-rated" class="parallax ">
@@ -190,38 +201,24 @@ $sliders = Slider::all();
                                 <h2 class="big-heading topic-dark"><span class="first">Customer</span> Testimonials</h2>
                                 <div id="owl-testimonial" class="owl-carousel owl-theme">
 
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <div class="img-back">
-                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
-                                        </div>
-                                        <h3>Emma Watson</h3>
-                                    </div>
+                                    <?php
+                                    foreach ($comments as $comment) {
+                                        ?>
+                                        <div class="item">
+                                            <blockquote>
+                                                <p><?php echo $comment['comment']; ?></p>
 
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <div class="img-back">
-                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
+                                            </blockquote>
+                                            <div class="img-back">
+                                                <img alt="imagetesti" class="tal" src="upload/comments/<?php echo $comment['image_name'] ?>" />
+                                            </div>
+                                            <h3><?php echo $comment['name']; ?></h3>
+                                            <h5><?php echo $comment['title']; ?></h5>
                                         </div>
-                                        <h3>Emma Watson</h3>
-                                    </div>  
+                                        <?php
+                                    }
+                                    ?>
 
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <small>Someone famous in <cite title="Source Title" class="color">Source Title</cite></small>
-                                        </blockquote>
-                                        <div class="img-back">
-                                            <img alt="imagetesti" class="tal" src="img/img-testi-1.png">
-                                        </div>
-                                        <h3>Emma Watson</h3>
-                                    </div>                        
                                 </div>
                             </div>
                         </div>
@@ -234,7 +231,7 @@ $sliders = Slider::all();
             <!-- testimony end -->
 
             <!-- section features -->
-            <section class="no-bottom" style="background-color: #000;">
+            <section class="sec-active no-bottom" style="background-color: #000;">
                 <div class="col-md-9">
                     <h3 class="big-heading-light1"><span class="first">Things</span> To Do In Sri Lanka</h3>
                 </div>
@@ -256,7 +253,7 @@ $sliders = Slider::all();
                                     <div class="col-md-4">
                                         <div class="features no-margin">
                                             <div class="bg-img" style="background: url(upload/activity/<?php echo $activity['image_name'] ?>);">
-                                                <div class="">
+                                                <div class="para-act">
                                                     <h3 class="big-heading"><?php echo $activity['title']; ?><sup class="subtour"></sup></h3>
                                                     <p class="content"><?php echo substr($activity['short_description'], 0, 120) . '...'; ?></p>
                                                     <a href="view-activities.php?id=<?php echo $activity["id"]; ?>"><span class="shine"></span>View More</a>
@@ -276,7 +273,7 @@ $sliders = Slider::all();
             </section>
             <!-- section features end -->
 
-            <!--  gallery home --> 
+            <!--  section attraction --> 
             <section aria-label="gallery">
                 <div class="container-fluid m-5-hor">
                     <div class="row">
@@ -301,7 +298,7 @@ $sliders = Slider::all();
                                             <div class="row">
                                                 <div class="col-md-12"> 
                                                     <h4 class=""><?php echo $attraction['title']; ?></h4>
-                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 118) . '...'; ?></p>
+                                                    <p class="para-tours"><?php echo substr($attraction['short_description'], 0, 74) . '...'; ?></p>
                                                     <span class="btn-center">
                                                         <center><a href="view-attractions.php?id=<?php echo $attraction["id"]; ?>" class="btn-content1">Read More</a></center>
                                                     </span>
@@ -335,7 +332,7 @@ $sliders = Slider::all();
                     </div>
                 </div>
             </section> 
-            <!--  gallery home end --> 
+            <!--  section attraction end --> 
 
             <?php
             include 'footer.php';
@@ -428,9 +425,7 @@ $sliders = Slider::all();
 
 
         </div>
-        <!-- content wraper end --> 
 
-        <!-- plugin JS -->
         <script src="plugin/pluginson3step.js"></script> 
         <script src="plugin/bootstrap.min.js"></script>
         <script src='plugin/bootstrap-datepicker.min.js'></script>
@@ -441,6 +436,7 @@ $sliders = Slider::all();
         <!-- on3step JS -->
         <script src="js/on3step.js"></script>
         <script src="js/plugin-set.js"></script>
+        <script src="contact-home/scripts.js" type="text/javascript"></script>
         <script>
             $(window).load(function () {
                 var width = $(window).width();
@@ -452,7 +448,9 @@ $sliders = Slider::all();
                     $('.gal-home1').removeClass('hidden');
                     $('.gal-home2').addClass('hidden');
                 }
+
             });
+
         </script>
 
     </body>

@@ -97,7 +97,7 @@ jQuery( window ).on( "load", function() {
 
   // max-char
   $(function () {
-    var maxL = 80;
+    var maxL = 200;
     $('p.max-char').each(function (i, div) {
         var text = $(div).text();
         if(text.length > maxL) {

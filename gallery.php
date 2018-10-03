@@ -13,7 +13,8 @@ $photo_albums = $PHOTO_ALBUM->all();
         <title>Gallery | Bonvoyagelanka</title>
         <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="travel gallery, travel photos, tour photos, tour gallery, gallery srilanka, tour package gallery" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">

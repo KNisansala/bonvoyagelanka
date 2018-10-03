@@ -74,6 +74,7 @@
   width: auto;
 	height: auto;
 	max-height:40px!important;
+        margin-top: 12px;
   }
 
   #main-menu.white {

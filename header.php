@@ -8,7 +8,7 @@
          <div class="col-md-6">
           <div class="left">
             <div class="social-icons-subnav hidden-sm hidden-xs">
-                <div>Call Us : +94 11 3 663500</div>
+                <div>Call Us : +94 71 433 8433</div>
             </div>
           </div>
          </div>
@@ -80,7 +80,7 @@
                     <a href="services.php">Services</a>
                 </li>
                 <li>
-                    <a  href="contacts.php">Contact</a>
+                    <a  href="contacts.php">Contact Us</a>
                 </li>
               </ul>
             </nav>

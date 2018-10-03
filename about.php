@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
         <title>About Us | Bonvoyagelanka</title>
-        <meta content="" name="description">
         <meta content="" name="author">
-        <meta content="" name="keywords">
+        <meta name="description" content="Holiday is a dream and we know it We, the team BONVOYAGELANKA travel crew is privileged to show you and to take you around the most beautiful island in the world..">
+        <meta content="About Bonvoyage Lanka, Bonvoyage Lanka, About Travel, About tour Web Sites, Travel, Tour, Sri Lanka, Activities in Sri Lanka" name="keywords">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <!-- favicon -->
         <link href="img/favicon1.png" rel="icon" sizes="32x32" type="image/png">
