@@ -18,9 +18,9 @@
                 </div>
 
                 <div class="col-md-4 text-right">
-                    <span>Phone: +94 71 433 8433</span>
-                    <span><img src="img/whatsapp.png" alt=""/> +94 71 433 8433</span>
-                    <span><img src="img/viber.png" alt=""/> +94 71 433 8433</span>
+                    <span>Phone: +94 774 260 350</span>
+                    <span><img src="img/whatsapp.png" alt=""/> +94 774 260 350</span>
+                    <span><img src="img/viber.png" alt=""/> +94 774 260 350</span>
                 </div>
             </div>
 

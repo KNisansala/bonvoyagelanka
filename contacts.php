@@ -159,9 +159,9 @@ if (isset($_GET['attraction'])) {
                             <address class="cont-1">
                                 <span>
                                     Shramadana Mawatha, Ethukala, Negombo.</span> 
-                                <span><strong>PHONE:</strong> +94 71 433 8433</span> 
-                                <span><img src="img/whatsapp.png" alt=""/> +94 71 433 8433</span>
-                                <span><img src="img/viber.png" alt=""/> +94 71 433 8433</span>
+                                <span><strong>PHONE:</strong> +94 774 260 350</span> 
+                                <span><img src="img/whatsapp.png" alt=""/> +94 774 260 350</span>
+                                <span><img src="img/viber.png" alt=""/> +94 774 260 350</span>
                                 <span><strong>EMAIL:</strong><a href="mailto:info@bonvoyagelanka.com"> info@bonvoyagelanka.com</a></span> 
                                 <span><strong>WEB:</strong><a href="http://bonvoyagelanka.com/"> www.bonvoyagelanka.com</a></span>
                             </address>

@@ -8,7 +8,7 @@
          <div class="col-md-6">
           <div class="left">
             <div class="social-icons-subnav hidden-sm hidden-xs">
-                <div>Call Us : +94 71 433 8433</div>
+                <div>Call Us : +94 774 260 350</div>
             </div>
           </div>
          </div>
@@ -22,12 +22,6 @@
                 <a href="#"><span class="ti-instagram"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
             </div>
-<!--            <div class="social-icons-subnav">
-              <a data-toggle="modal" data-target="#fLogin"><span class="ti-lock"></span> Login</a>
-            </div>    
-            <div class="social-icons-subnav hidden-sm hidden-xs">
-              <a data-toggle="modal" data-target="#fsignUp"><span class="ti-user"></span> Sign up</a>
-            </div>-->
           </div>
          </div>
         
